@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bu3TXW/ixUBGGf9cuPn50Mao9/xXMeYr5kOMAMqkmhy0H7xtieWWgV+3TiYn4IIHLWETX34rLGZ055/XSz9iPw==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\BOMTool\\BOMTool.M\\BOMTool.M.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\610092404\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\610092404\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\610092404\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
