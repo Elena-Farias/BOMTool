@@ -1,0 +1,9 @@
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\bin\Debug\netstandard2.0\BOMTool.M.deps.json
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\bin\Debug\netstandard2.0\BOMTool.M.dll
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\bin\Debug\netstandard2.0\BOMTool.M.pdb
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\obj\Debug\netstandard2.0\BOMTool.M.csprojAssemblyReference.cache
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\obj\Debug\netstandard2.0\BOMTool.M.AssemblyInfoInputs.cache
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\obj\Debug\netstandard2.0\BOMTool.M.AssemblyInfo.cs
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\obj\Debug\netstandard2.0\BOMTool.M.csproj.CoreCompileInputs.cache
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\obj\Debug\netstandard2.0\BOMTool.M.dll
+C:\Code\BOMToolVS\BOMTool\BOMTool.M\obj\Debug\netstandard2.0\BOMTool.M.pdb

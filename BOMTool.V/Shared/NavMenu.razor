@@ -1,0 +1,48 @@
+﻿<Bar Mode="BarMode.VerticalInline"
+     CollapseMode="BarCollapseMode.Small"
+     Breakpoint="Breakpoint.Desktop"
+     NavigationBreakpoint="Breakpoint.Tablet"
+     ThemeContrast="ThemeContrast.Light"
+     Background="Background.Primary">
+    <BarBrand>
+        <BarItem>
+            <BarLink To="">
+                <BarIcon IconName="IconName.Home" />
+                BOM TOOL
+            </BarLink>
+        </BarItem>
+    </BarBrand>
+    <BarMenu>
+        <BarStart>
+            <BarItem>
+                <BarDropdown>
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.Edit" />
+                        Administration
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem>
+                            <BarLink To="Location">
+                                <BarIcon IconName="IconName.Store" />
+                                Location
+                            </BarLink>
+                        </BarDropdownItem>
+                        <BarDropdownItem>
+                            <BarLink To="User">
+                                <BarIcon IconName="IconName.Users" />
+                                Users
+                            </BarLink>
+                        </BarDropdownItem>
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+            <BarItem>
+                <BarLink To="PartNum">
+                    <BarIcon IconName="IconName.Circle" />
+                    BOM Tool
+                </BarLink>
+            </BarItem>
+        </BarStart>
+    </BarMenu>
+</Bar>
+

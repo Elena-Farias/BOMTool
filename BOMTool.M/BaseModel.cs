@@ -1,21 +1,20 @@
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System; 
-using BOMTool.M;
+using System.Collections.Generic;
+using System.Text;
+
 
 namespace BOMTool.M
 {
     public class BaseModel
     {
-        public System.DateTime CreatedDate {get; set;} 
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        public DateTime CreatedAt { get; set; }
+        
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        public DateTime UpdatedAt { get; set; }
 
-        [MaxLength (9)]
-       public string CreatedAt  {get; set;}
-
-
-       public System.DateTime UpdatedDate  {get; set;} 
-
-
-       [MaxLength (9)]
-       public string UpdatedAt {get; set;} 
+        public virtual User CreatedBy { get; set; }
+        public virtual User UpdatedBy { get; set; }
     }
 }
