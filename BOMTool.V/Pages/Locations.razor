@@ -1,8 +1,35 @@
 ﻿@inherits Fluxor.Blazor.Web.Components.FluxorComponent
-@page "/Location"
+@page "/Locations"
 
-<Row>
-    <Column ColumnSize="ColumnSize.Is12">
-        <Heading Size="HeadingSize.Is4">Location Catalog</Heading>
-    </Column>
-</Row>
+@if (LocationState.Value.IsLoading)
+{
+    // <SpinKitPulse />
+}
+
+else
+{
+    <AuthorizeView>
+        <Authorized>
+            Hello, @context.User.Identity.Name!
+            Here is the list of your claims:
+            <ul>
+                @foreach (var claim in context.User.Claims)
+                {
+                    <li><b>@claim.Type</b>:@claim.Value</li>
+                }
+            </ul>
+        </Authorized>
+        <NotAuthorized>
+            <p> Sorry Not Authenticate Try Again</p>
+        </NotAuthorized>
+    </AuthorizeView>
+
+    <Row>
+        <Column ColumnSize="ColumnSize.Is12">
+            <Heading Size="HeadingSize.Is4">Location Catalog</Heading>
+        </Column>
+    </Row>
+
+
+}
+

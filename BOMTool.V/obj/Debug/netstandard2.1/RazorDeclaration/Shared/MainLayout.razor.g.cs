@@ -103,13 +103,33 @@ using Fluxor;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+#nullable restore
+#line 14 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class MainLayout : Fluxor.Blazor.Web.Components.FluxorLayout
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 23 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\MainLayout.razor"
+       
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -1,18 +1,13 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using BOMTool.C.Data;
 using Newtonsoft.Json;
 using BOMTool.C.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace BOMTool.C
 {
@@ -30,9 +25,30 @@ namespace BOMTool.C
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(_config =>
+            {
+                _config.AddDefaultPolicy(b =>
+                {
+                    b.AllowAnyHeader();
+                    b.AllowAnyMethod();
+                    b.AllowAnyOrigin();
+                });
+            });
 
-            services.AddHttpContextAccessor();
-            services.AddControllers().AddNewtonsoftJson(b =>
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(config =>
+        {
+            config.Authority = "https://mxjuadev02.rbc.int/";
+            config.Audience = "bomtool-api";
+            config.RequireHttpsMetadata = false;
+        });
+
+         services.AddAuthorization();
+         services.AddControllers();
+
+         services.AddHttpContextAccessor();
+         services.AddControllers().AddNewtonsoftJson(b =>
             {
                 b.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             });
@@ -45,18 +61,6 @@ namespace BOMTool.C
             });
 
             services.AddScoped<IOracleServices, OracleServices>();
-
-            services.AddControllers();
-
-            services.AddCors(_config =>
-            {
-                _config.AddDefaultPolicy(b =>
-                {
-                    b.AllowAnyHeader();
-                    b.AllowAnyMethod();
-                    b.AllowAnyOrigin();
-                });
-            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -66,9 +70,13 @@ namespace BOMTool.C
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication();
+            app.UseRouting();
+            app.UseAuthorization();
+
             app.UseCors();
 
-            app.UseRouting();
+            //app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {

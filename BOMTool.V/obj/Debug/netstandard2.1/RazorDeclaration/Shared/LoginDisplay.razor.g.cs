@@ -97,6 +97,13 @@ using Fluxor;
 #line hidden
 #nullable disable
 #nullable restore
+#line 14 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 

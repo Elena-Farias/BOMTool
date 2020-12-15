@@ -1,4 +1,4 @@
-﻿@inherits LayoutComponentBase
+﻿@inherits Fluxor.Blazor.Web.Components.FluxorLayout
 
 <Layout Sider="true">
     <LayoutSider>
@@ -6,10 +6,25 @@
             <NavMenu />
         </LayoutSiderContent>
     </LayoutSider>
-
     <Layout>
+        <LayoutHeader>
+            <LoginDisplay />
+        </LayoutHeader>
         <LayoutContent>
-            @Body
+            <Row Gutter="(32, 16)">
+                <Column ColumnSize="ColumnSize.Is12">
+                    @Body
+                </Column>
+            </Row>
         </LayoutContent>
     </Layout>
 </Layout>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+}

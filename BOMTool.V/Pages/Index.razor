@@ -1,3 +1,20 @@
 ﻿@page "/"
 
 <h1><p><fore color="DarkBlue"> BOM TOOL  !</fore></p></h1>
+
+
+<AuthorizeView>
+    <Authorized>
+        Hello, @context.User.Identity.Name!
+        Here is the list of your claims:
+        <ul>
+            @foreach (var claim in context.User.Claims)
+            {
+                <li><b>@claim.Type</b>:@claim.Value</li>
+            }
+        </ul>
+    </Authorized>
+    <NotAuthorized>
+        <p> Sorry Not Authenticate Try Again</p>
+    </NotAuthorized>
+</AuthorizeView>

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using BOMTool.M;
 
 namespace BOMTool.V.Store.State
@@ -14,7 +11,7 @@ namespace BOMTool.V.Store.State
             Currents = currentEntities;
             Current = currentEntitie;
          }
-
+        
         public IEnumerable<Location> Currents { get; }
         public Location Current { get; }
     }

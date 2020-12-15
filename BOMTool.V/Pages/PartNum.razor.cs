@@ -11,6 +11,7 @@ namespace BOMTool.V.Pages
     public partial class PartNum
     {
         public Modal modalRef;
+        public string partNum; 
 
         void GetData()
         {

@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using BOMTool.C.Data;
 using BOMTool.C.Services;
-using BOMTool.M;
+using System;
 
 namespace BOMTool.C.Controller
 {
@@ -16,18 +13,29 @@ namespace BOMTool.C.Controller
         private ApplicationDbContext _context;
         private IOracleServices _oracle;
 
-    //    public PartNumController(ApplicationDbContext context, IOracleServices oracle)
-     //   {
-     //      _context = context;
-     //      _oracle = oracle;
-     //   }
-        
-        [HttpGet("getfromoracle/{code}")]
-        public async Task<ActionResult> GetFromOracle (int code)
+        public PartNumController(ApplicationDbContext context, IOracleServices oracle)
         {
-            _oracle.GetPartNumber(code);
-            return Ok();
+            _context = context;
+            _oracle = oracle; 
+        }
+
+        
+        [HttpGet("{OrgCode}/{PartNum}")]
+        public async Task<ActionResult> GetFromOracle(string orgcode, string partnumb)
+        {
+            try
+            {
+                _oracle.GetPartNumber(orgcode, partnumb);
+                return Ok();           
+             }
+
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
 
        }
+       
     }
+
 }

@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Security;
+﻿using System.Security;
+using BOMTool.C.Data;
 using Microsoft.Extensions.Configuration;
 using Oracle.ManagedDataAccess.Client;
-using BOMTool.C.Data;
-using BOMTool.C.Services;
-using BOMTool.M;
-using BOMTool.C;
-
+using System.Data;
 
 namespace BOMTool.C.Services
 {
-    public class OracleServices : IOracleServices
+    public class OracleServices  : IOracleServices
     {
         private readonly IConfiguration _configuration;
+        private readonly ApplicationDbContext _context;
 
         public OracleServices(IConfiguration configuration)
         {
@@ -36,41 +30,45 @@ namespace BOMTool.C.Services
 
         }
 
-        public string GetPartNumber(int Code)
+        public string GetPartNumber(string OrgCode, string partNumber)
          {
             var oracleCredentials = new OracleCredential(_configuration.GetValue<string>("OracleUser"), OracleSecurePassword(_configuration.GetValue<string>
                 ("OraclePassword")));
+
             using (var connetion = new OracleConnection(_configuration.GetConnectionString("Oracle"), oracleCredentials))
             {
                 connetion.Open();
                 using (var command = connetion.CreateCommand())
                 {
-                    var query = "SELECT b.assembly_item_id, bc.component_item_id, mi.segment1 as Parent_Item, mi.description as Parent_Item_Desc, mi2.segment1 comp_item,";
-                    query += "bc.component_quantity, mi2.description as Comp_Desc, Mi.Primary_Unit_Of_Measure, Mi.item_type as Parent_Item_Type, ";
-                    query += "tp1.meaning as Item_Type_Desc, Mi2.Primary_Unit_Of_Measure as UOM, Mi2.item_type as item_type2, tp2.meaning as Component_Item_Type ";
-                    query += "FROM apps.bom_bill_of_materials b, ";
-                    query += "apps.bom_inventory_components bc, ";
-                    query += "inv.mtl_system_items_b mi, ";
-                    query += "inv.mtl_system_items_b mi2, ";
-                    query += "apps.fnd_common_lookups tp1, ";
-                    query += "apps.fnd_common_lookups tp2 ";
-                    query += "WHERE b.bill_sequence_id = bc.bill_sequence_id and mi.inventory_item_id = b.assembly_item_id ";
-                    query += "and mi2.inventory_item_id = bc.component_item_id  and mi.organization_id = b.organization_id ";
-                    query += "and mi2.organization_id = b.organization_id and tp1.lookup_type = 'ITEM_TYPE' and tp2.lookup_type = 'ITEM_TYPE' ";
-                    query += "and tp1.lookup_code = Mi.item_type and tp2.lookup_code = Mi2.item_type ";
-                    query += "and b.organization_id = ";
+                    var query = "SELECT  top_level_item As Model, child_item As PartNum, child_item_description As ItemDescription, child_Item_uom UOM, ROUND(quantity,4) QTY, child_item_type As ItemType, mp.organization_code As OrgCode ";
+                    query += " FROM ( SELECT '" + partNumber + "' top_level_item, ";
+                    query += " (SELECT msi.segment1 FROM apps.mtl_system_items msi , apps.mtl_parameters mp WHERE msi.inventory_item_id = bom.assembly_item_id AND msi.organization_id  = mp.organization_id AND mp.organization_code = '" + OrgCode + "') ";
+                    query += " parent_item , LEVEL,  ";
+                    query += " (SELECT msi.segment1 FROM apps.mtl_system_items msi, apps.mtl_parameters mp WHERE msi.inventory_item_id = bic.component_item_id AND msi.organization_id = mp.organization_id AND mp.organization_code = '" + OrgCode + "') ";
+                    query += " child_item , ";
+                    query += " (SELECT msi.description FROM apps.mtl_system_items msi , apps.mtl_parameters mp WHERE msi.inventory_item_id = bic.component_item_id AND msi.organization_id = mp.organization_id AND mp.organization_code = '" + OrgCode + "')";
+                    query += " child_item_description, ";
+                    query += " (SELECT msi.primary_uom_code FROM apps.mtl_system_items msi ,apps.mtl_parameters mp WHERE msi.inventory_item_id = bic.component_item_id AND msi.organization_id   = mp.organization_id AND mp.organization_code = '" + OrgCode + "') ";
+                    query += " child_item_uom, ";
+                    query += " (SELECT msi.item_type FROM apps.mtl_system_items msi , apps.mtl_parameters mp WHERE msi.inventory_item_id = bic.component_item_id AND msi.organization_id  = mp.organization_id AND mp.organization_code ='" + OrgCode + "')";
+                    query += " child_item_type , ";
+                    query += " bic.component_quantity quantity ";
+                    query += " FROM apps.bom_inventory_components bic,";
+                    query += " (SELECT bbom.* FROM apps.bom_bill_of_materials bbom , apps.mtl_parameters mp WHERE(bbom.organization_id = mp.organization_id) AND mp.organization_code = '" + OrgCode + "') bom ";
+                    query += " WHERE bom.common_bill_sequence_id = bic.bill_sequence_id AND bom.common_bill_sequence_id  = bom.common_bill_sequence_id ";
+                    query += " AND bic.bill_sequence_id = bic.bill_sequence_id AND NVL(bic.disable_date , SYSDATE + 1) > SYSDATE START WITH bom.assembly_item_id = ";
+                    query += " (SELECT DISTINCT inventory_item_id FROM apps.mtl_system_items WHERE segment1 = '" + partNumber + "')";
+                    query += " CONNECT BY NOCYCLE PRIOR bic.component_item_id = bom.assembly_item_id ORDER BY LEVEL, bic.item_num) ";               
 
                     command.CommandText = query;
-                    command.Parameters.Add("Code", Code);
 
-                    OracleDataReader reader = command.ExecuteReader();
+                    OracleDataAdapter adapter = new OracleDataAdapter(query, connetion);
+                    OracleCommandBuilder builder = new OracleCommandBuilder(adapter);
 
-                    while (reader.Read())
-                    {
-                        
+                    DataSet dataset = new DataSet();
+                    adapter.Fill(dataset, "dtPartNumbs");
 
-                    }
-
+                    DataTable dataTable = dataset.Tables["dtPartNumbs"];
                 }   
 
             };

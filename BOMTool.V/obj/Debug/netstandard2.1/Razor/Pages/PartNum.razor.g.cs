@@ -100,6 +100,13 @@ using Fluxor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/PartNum")]
     public partial class PartNum : Fluxor.Blazor.Web.Components.FluxorComponent
     {

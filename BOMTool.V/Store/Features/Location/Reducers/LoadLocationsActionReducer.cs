@@ -1,10 +1,6 @@
 ﻿using BOMTool.V.Store.Features.Locations.Actions;
 using BOMTool.V.Store.State;
 using Fluxor;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BOMTool.V.Store.Features.Locations.Reducers
 {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Collections.Generic;
+using Microsoft.Extensions.Configuration;
 
 namespace BOMTool.C.Data
 {
@@ -14,6 +14,7 @@ namespace BOMTool.C.Data
 
     {
          private User _user;
+        private readonly IConfiguration _configuration;
 
         public ApplicationDbContext() : base()
         {
@@ -71,7 +72,15 @@ namespace BOMTool.C.Data
         public DbSet<Location> Location { get; set;  }
 
         public DbSet<User> User { get; set;  }
-        public IEnumerable<object> Locations { get; internal set; }
+        //public IEnumerable<object> Locations { get; internal set; }
+
+
+        public DbSet<PartNumbDto> PartNumbDtos { get; set;  }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder  optionsBuilder)
+        {
+            optionsBuilder.UseOracle(_configuration.GetValue<string>("OracleConn"));
+        }
 
         protected override void OnModelCreating(ModelBuilder Builder)
         {

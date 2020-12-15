@@ -1,9 +1,5 @@
 ﻿using Fluxor;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using BOMTool.V.Store.Features.Locations.Actions;
 
 namespace BOMTool.V.Services
@@ -22,6 +18,4 @@ namespace BOMTool.V.Services
             _dispacher.Dispatch(new LoadLocationsAction());
         }
     }
-
-
-}
+ }

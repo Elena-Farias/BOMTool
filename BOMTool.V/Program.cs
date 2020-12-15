@@ -1,11 +1,7 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Blazorise;
 using Blazorise.Bootstrap;
@@ -14,6 +10,7 @@ using Fluxor;
 using System.Reflection;
 using BOMTool.V.Helpers;
 using BOMTool.V.Services;
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
 namespace BOMTool.V
 {
@@ -22,6 +19,16 @@ namespace BOMTool.V
         public static async Task Main(string[] args)
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
+            var currentAssembly = typeof(Program).Assembly;
+
+            builder.Services
+          .AddBlazorise(options =>
+          {
+              options.ChangeTextOnKeyPress = true;
+          })
+           .AddBootstrapProviders()
+           .AddFontAwesomeIcons();
+
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddTransient<CustomAuthorizationMessageHandler>();
@@ -32,6 +39,7 @@ namespace BOMTool.V
                     client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("ServerAPI"));
                 }).AddHttpMessageHandler<CustomAuthorizationMessageHandler>();
 
+
             builder.Services.AddFluxor(options =>
             {
                 options.ScanAssemblies(Assembly.GetExecutingAssembly());
@@ -40,30 +48,35 @@ namespace BOMTool.V
 
             builder.Services.AddScoped<StateServices>();
 
-           // builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
             builder.Services.AddOidcAuthentication(options =>
             {
-                // Configure your authentication provider options here.
-                // For more information, see https://aka.ms/blazor-standalone-auth
-                builder.Configuration.Bind("Local", options.ProviderOptions);
-            });
+                options.ProviderOptions.Authority = "https://mxjuadev02.rbc.int/";
+                options.ProviderOptions.ClientId = "bomtool-spa";
+                options.ProviderOptions.ResponseType = "id_token token";
+                options.ProviderOptions.DefaultScopes.Add("openid");
+                options.ProviderOptions.DefaultScopes.Add("profile");
+                options.ProviderOptions.DefaultScopes.Add("roles");
+                options.ProviderOptions.DefaultScopes.Add("bomtool.read");
+                options.ProviderOptions.DefaultScopes.Add("bomtool.write");
+                options.UserOptions.RoleClaim = "role";
+            })
+                   .AddAccountClaimsPrincipalFactory<ArrayClaimsPrincipalFactory<RemoteUserAccount>>();
 
-
-            builder.Services
-             .AddBlazorise(options =>
-             {
-                 options.ChangeTextOnKeyPress = true;
-             })
-              .AddBootstrapProviders()
-              .AddFontAwesomeIcons();
-
-            builder.Services.AddSingleton(new HttpClient
+            builder.Services.AddAuthorizationCore(builder =>
             {
-                BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+                builder.AddPolicy("Administrator", p =>
+                {
+                    p.RequireRole("Administrator");
+                });
             });
+                    
 
-            await builder.Build().RunAsync();
+         //   builder.Services.AddSingleton(new HttpClient
+          //  {
+          //      BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+          //  });
+
+           //// await builder.Build().RunAsync();
 
             var host = builder.Build();
            

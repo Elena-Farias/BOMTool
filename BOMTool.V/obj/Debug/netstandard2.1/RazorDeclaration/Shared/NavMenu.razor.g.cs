@@ -103,6 +103,13 @@ using Fluxor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -110,6 +117,23 @@ using Fluxor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 49 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
+       RenderFragment customIcon =
+
+#line default
+#line hidden
+#nullable disable
+        (__builder2) => {
+            __builder2.AddMarkupContent(0, "<img src=\"Images/brand-logo.png\" style=\"width:100px; height: 42px\">");
+        }
+#nullable restore
+#line 49 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
+                                                                                                        ;
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
