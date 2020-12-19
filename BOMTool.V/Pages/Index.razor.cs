@@ -9,7 +9,7 @@ namespace BOMTool.V.Pages
     public partial class Index
     {
         [Inject]
-        IState<LocationState> LocationsState { get; set; }
+        IState<LocationsState> LocationsState { get; set; }
 
         [Inject]
         StateServices stateServices { get; set;  }

@@ -49,6 +49,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Fluxor.Blazor.Web": {
               "target": "Package",
               "version": "[3.9.0, )"
@@ -83,13 +87,13 @@
               "target": "Package",
               "version": "[3.1.10, )"
             },
-            "Oracle.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.19.80, )"
-            },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
               "version": "[2.19.100, )"
+            },
+            "Z.EntityFramework.Extensions.EFCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
             }
           },
           "imports": [

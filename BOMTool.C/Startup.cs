@@ -8,6 +8,9 @@ using BOMTool.C.Data;
 using Newtonsoft.Json;
 using BOMTool.C.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using AutoMapper;
+using BOMTool.M.DTOs;
+using BOMTool.M; 
 
 namespace BOMTool.C
 {

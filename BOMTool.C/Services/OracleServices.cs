@@ -3,6 +3,12 @@ using BOMTool.C.Data;
 using Microsoft.Extensions.Configuration;
 using Oracle.ManagedDataAccess.Client;
 using System.Data;
+using BOMTool.M.DTOs;
+using System.Globalization;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace BOMTool.C.Services
 {
@@ -11,9 +17,10 @@ namespace BOMTool.C.Services
         private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
 
-        public OracleServices(IConfiguration configuration)
+        public OracleServices(IConfiguration configuration, ApplicationDbContext context)
         {
             _configuration = configuration;
+            _context = context; 
         }
 
         private SecureString OracleSecurePassword(string password)
@@ -30,7 +37,7 @@ namespace BOMTool.C.Services
 
         }
 
-        public string GetPartNumber(string OrgCode, string partNumber)
+       public Task<List<PartNumbDto>> GetPartNumber(string OrgCode, string partNumber)
          {
             var oracleCredentials = new OracleCredential(_configuration.GetValue<string>("OracleUser"), OracleSecurePassword(_configuration.GetValue<string>
                 ("OraclePassword")));
@@ -40,7 +47,7 @@ namespace BOMTool.C.Services
                 connetion.Open();
                 using (var command = connetion.CreateCommand())
                 {
-                    var query = "SELECT  top_level_item As Model, child_item As PartNum, child_item_description As ItemDescription, child_Item_uom UOM, ROUND(quantity,4) QTY, child_item_type As ItemType, mp.organization_code As OrgCode ";
+                    var query = "SELECT  top_level_item As Model, child_item As PartNum, child_item_description As ItemDescription, child_Item_uom UOM, ROUND(quantity,4) QTY, child_item_type As ItemType ";
                     query += " FROM ( SELECT '" + partNumber + "' top_level_item, ";
                     query += " (SELECT msi.segment1 FROM apps.mtl_system_items msi , apps.mtl_parameters mp WHERE msi.inventory_item_id = bom.assembly_item_id AND msi.organization_id  = mp.organization_id AND mp.organization_code = '" + OrgCode + "') ";
                     query += " parent_item , LEVEL,  ";
@@ -66,14 +73,30 @@ namespace BOMTool.C.Services
                     OracleCommandBuilder builder = new OracleCommandBuilder(adapter);
 
                     DataSet dataset = new DataSet();
-                    adapter.Fill(dataset, "dtPartNumbs");
+                    adapter.Fill(dataset);
 
-                    DataTable dataTable = dataset.Tables["dtPartNumbs"];
-                }   
+                    try
+                    {
+                        var bulkpartnum = dataset.Tables[0].AsEnumerable().Select(x => 
+                            new PartNumbDto { Model = x["Model"].ToString(),
+                                              PartNum = x["PartNum"].ToString(),
+                                              ItemDescription = x["ItemDescription"].ToString(),
+                                              UOM = x["UOM"].ToString(),
+                                              QTY = x["QTY"].ToString(),
+                                              ItemType = x["ItemType"].ToString()
+                            }).ToList();
 
+                       return Task.FromResult(bulkpartnum);
+                    }
+
+                    catch (Exception ex)
+                    {
+                        _ = ex.Message;
+                        return null;
+                    }
+
+                 }   
             };
-
-            return "Done";
         }
 
     }

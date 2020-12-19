@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using BOMTool.M;
+using BOMTool.M.DTOs;
 
 namespace BOMTool.V.Store.State
 {

@@ -3,11 +3,11 @@ using Fluxor;
 
 namespace BOMTool.V.Store.Features.Locations
 {
-    public class LocationFeature : Feature<LocationState>
+    public class LocationFeature : Feature<LocationsState>
     {
         public override string GetName() => "LocationState";
 
-        protected override LocationState GetInitialState() =>
-            new LocationState(false, null, null, null);
+        protected override LocationsState GetInitialState() =>
+            new LocationsState(false, null, null, null);
     }
 }

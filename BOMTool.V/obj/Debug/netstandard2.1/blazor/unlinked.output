@@ -47,6 +47,7 @@ obj\Debug\netstandard2.1\blazor\unlinked\Fluxor.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Configuration.Binder.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Configuration.Abstractions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Primitives.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Blazorise.DataGrid.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Blazorise.Sidebar.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Http.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Logging.dll

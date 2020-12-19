@@ -1,7 +1,7 @@
 ﻿@inherits Fluxor.Blazor.Web.Components.FluxorComponent
-@page "/Locations"
+@page "/Location"
 
-@if (LocationState.Value.IsLoading)
+@if (LocationsState.Value.IsLoading)
 {
     // <SpinKitPulse />
 }
@@ -11,25 +11,36 @@ else
     <AuthorizeView>
         <Authorized>
             Hello, @context.User.Identity.Name!
-            Here is the list of your claims:
-            <ul>
-                @foreach (var claim in context.User.Claims)
-                {
-                    <li><b>@claim.Type</b>:@claim.Value</li>
-                }
-            </ul>
-        </Authorized>
+          </Authorized>
         <NotAuthorized>
             <p> Sorry Not Authenticate Try Again</p>
         </NotAuthorized>
     </AuthorizeView>
 
-    <Row>
+
         <Column ColumnSize="ColumnSize.Is12">
             <Heading Size="HeadingSize.Is4">Location Catalog</Heading>
         </Column>
-    </Row>
 
+        <Paragraph Alignment="TextAlignment.Center"> <DisplayHeading Size="DisplayHeadingSize.Is4">Locations</DisplayHeading> </Paragraph>
+        <DataGrid TItem="Location"
+                  Data="@LocationsState.Value.Currents"
+                  Sortable="true"
+                  Editable="true"
+                  ShowPager="true"
+                  PageSize="20">
+            <DataGridColumn TItem="Location" Field="@nameof(Location.Id)" Caption="Id" Sortable="false" />
+            <DataGridColumn TItem="Location" Field="@nameof(Location.Name)" Caption="Plant Name" Sortable="true" />
+            <DataGridColumn TItem="Location" Field="@nameof(Location.Code)" Caption="Plant Name" Sortable="true" />
+            <DataGridCommandColumn TItem="Location" EditCommandAllowed="true">
+                <EditCommandTemplate>
+                    <Button Color="Color.Primary" Clicked="@(() => ShowModal((context.Item as Location), false))">Edit</Button>
+                </EditCommandTemplate>
+                <NewCommandTemplate>
+                    <Button Color="Color.Primary" Clicked="@(() => ShowModal(new Location(), true))">New</Button>                        
+                </NewCommandTemplate>
+             </DataGridCommandColumn>
+         </DataGrid>
 
 }
 

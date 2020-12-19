@@ -7,15 +7,15 @@ namespace BOMTool.V.Store.Features.Locations.Reducers
     public class LoadLocationsActionReducer
     {
         [ReducerMethod]
-        public static LocationState ReduceLoadLocationAction(LocationState state, LoadLocationsAction _)
-            => new LocationState(true, null, null, state.Current);
+        public static LocationsState ReduceLoadLocationAction(LocationsState state, LoadLocationsAction _)
+            => new LocationsState(true, null, null, state.Current);
 
         [ReducerMethod]
-        public static LocationState ReduceLoadLocationSuccessAction(LocationState state, LoadLocationsSuccessAction action)
-            => new LocationState(false, null, action.Locations, state.Current);
+        public static LocationsState ReduceLoadLocationSuccessAction(LocationsState state, LoadLocationsSuccessAction action)
+            => new LocationsState(false, null, action.Locations, state.Current);
 
         [ReducerMethod]
-        public static LocationState ReduceLoadLocationFailureAction(LocationState state, LoadLocationsFailureAction action)
-            => new LocationState(false, action.ErrorMessage, null, state.Current);
+        public static LocationsState ReduceLoadLocationFailureAction(LocationsState state, LoadLocationsFailureAction action)
+            => new LocationsState(false, action.ErrorMessage, null, state.Current);
     }
 }

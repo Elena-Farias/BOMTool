@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Json;
 using BOMTool.V.Store.Features.PartNums.Actions;
-using BOMTool.M;
+using BOMTool.M.DTOs;
 using System.Collections.Generic;
 
 namespace BOMTool.V.Store.Features.PartNums.Effects
@@ -22,13 +22,17 @@ namespace BOMTool.V.Store.Features.PartNums.Effects
             _logger = logger;
         }
 
+        //protected override async Task HandleAsync(LoadPartNumsAction action, IDispatcher dispatcher)
         protected override async Task HandleAsync(LoadPartNumsAction action, IDispatcher dispatcher)
         {
+
             try
             {
                 _logger.LogInformation("Loading Locations...");
                 var client = _clientFactory.CreateClient("ServerAPI");
-                var ResponseData = await client.GetFromJsonAsync<IEnumerable<PartNumbDto>>("PartNumbDto");
+                var loccode = action.LocationCode;
+                var partnum = action.PartNum; 
+                var ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>("PartNum/{loccode}/{partnum}");
 
                 _logger.LogInformation("Locations loaded successfully!");
                 dispatcher.Dispatch(new LoadPartNumsSuccessAction(ResponseData));
@@ -39,7 +43,7 @@ namespace BOMTool.V.Store.Features.PartNums.Effects
             }
             catch (Exception e)
             {
-                _logger.LogError($"Error loading Locations, reason: {e.Message}");
+                _logger.LogError($"Error loading PartNumbers, reason: {e.Message}");
                 dispatcher.Dispatch(new LoadPartNumsFailureAction(e.Message));
             }
         }

@@ -107,6 +107,27 @@ using Microsoft.AspNetCore.Authorization;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using BOMTool.M;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using BOMTool.V.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using BOMTool.M.DTOs;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 using BOMTool.C.Data;
 using BOMTool.C.Services;
 using System;
+using Microsoft.EntityFrameworkCore;
+using BOMTool.M.DTOs;
+using System.Collections.Generic;
 
 namespace BOMTool.C.Controller
 {
@@ -20,13 +23,14 @@ namespace BOMTool.C.Controller
         }
 
         
-        [HttpGet("{OrgCode}/{PartNum}")]
-        public async Task<ActionResult> GetFromOracle(string orgcode, string partnumb)
+        [HttpGet("/{OrgCode}/{PartNum}")]
+        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracle(string orgcode, string partnumb)
         {
             try
             {
-                _oracle.GetPartNumber(orgcode, partnumb);
-                return Ok();           
+                var partNumbers = await _oracle.GetPartNumber(orgcode, partnumb);
+                
+                return partNumbers;           
              }
 
             catch(Exception ex)

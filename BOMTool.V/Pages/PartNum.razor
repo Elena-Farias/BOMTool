@@ -1,36 +1,64 @@
 ﻿@page "/PartNum"
 @inherits Fluxor.Blazor.Web.Components.FluxorComponent
 
-<Row Padding="Padding.Is4.OnAll">
-    <Column ColumnSize="ColumnSize.IsThird.OnDesktop.IsFull.OnTablet">
-        <Heading Size="HeadingSize.Is4">
-            <Icon Name="IconName.Shapes" />
-            BOM TOOL
-        </Heading>
-    </Column>
+<PageTitle
+    Text="BOM Tool"
+    Icon="IconName.Map"
+/>
 
-    <Column ColumnSize="ColumnSize.IsThird.OnDesktop.IsFull.OnTablet">
-        <Field Horizontal="true">
+<Row Padding="Padding.Is4.OnAll">
+    @if (!PartNumState.Value.IsLoading && !(LocationState.Value.Currents == null))
+    {
+        var locations = LocationState.Value.Currents.ToList();
+
+        <Field ColumnSize="ColumnSize.Is3">
             <FieldLabel>
                 Select Location:
             </FieldLabel>
-            <TextEdit Placeholder="Location name..." />
+            <FieldBody>
+                <Select TValue="string" @bind-SelectedValue="selectedLocation">
+                    <SelectItem Value="-1">
+                        Seleccione Locacion
+                    </SelectItem>
+                        @foreach (var locs in locations)
+                        {
+                            <SelectItem Value="@locs.Code">@locs.Name</SelectItem>
+                        }
+                </Select>
+            </FieldBody>           
+        </Field>
+
+        <Field ColumnSize="ColumnSize.Is3">
             <FieldLabel>
                 Enter Part Number:
             </FieldLabel>
-            <TextEdit Placeholder="Part Number..."  />
+            <TextEdit Placeholder="Part Number..." @bind-Text="partnum" />
         </Field>
+        <Field>
+            <FieldBody >
+                <Button Color="Color.Primary"
+                        Clicked="@(() => SeachPartNum(selectedLocation,partnum))">
+                    <Icon Name="IconName.Search" />
+                    Buscar
+                </Button>                        
+            </FieldBody>
+        </Field>
+    }
+</Row>
+<Row>
+    <Column>
+        <DataGrid TItem="PartNumbDto"
+                  Data="@PartNumState.Value.Currents"
+                  Sortable="true"
+                  ShowPager="true"
+                  PageSize="50">
+            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.Model)" Caption="Model" Sortable="false" />
+            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.PartNum)" Caption="Part Number" Sortable="true" />
+            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.ItemDescription)" Caption="Description" Sortable="true" />
+            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.UOM)" Caption="UOM" Sortable="true" />
+            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.QTY)" Caption="QTY" Sortable="true" />
+            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.ItemType)" Caption="Item Type" Sortable="true" />
+        </DataGrid>
     </Column>
-
-    <Column ColumnSize="ColumnSize.IsThird.OnDesktop.IsFull.OnTablet">
-        <Tooltip Text="Search by Part Number">
-            <Button Color="Color.Primary"
-                    Clicked="@(() => GetData())">
-                <Icon Name="IconName.SearchPlus" />
-                Buscar
-            </Button>
-        </Tooltip>
-    </Column>
-
 </Row>
 

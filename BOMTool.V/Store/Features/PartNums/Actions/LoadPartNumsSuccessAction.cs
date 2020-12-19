@@ -1,4 +1,4 @@
-﻿using BOMTool.M;
+﻿using BOMTool.M.DTOs;
 using System.Collections.Generic;
 
 namespace BOMTool.V.Store.Features.PartNums.Actions

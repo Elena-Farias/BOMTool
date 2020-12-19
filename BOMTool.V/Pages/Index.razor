@@ -5,14 +5,7 @@
 
 <AuthorizeView>
     <Authorized>
-        Hello, @context.User.Identity.Name!
-        Here is the list of your claims:
-        <ul>
-            @foreach (var claim in context.User.Claims)
-            {
-                <li><b>@claim.Type</b>:@claim.Value</li>
-            }
-        </ul>
+        Hello, @context.User.Identity.Name!     
     </Authorized>
     <NotAuthorized>
         <p> Sorry Not Authenticate Try Again</p>

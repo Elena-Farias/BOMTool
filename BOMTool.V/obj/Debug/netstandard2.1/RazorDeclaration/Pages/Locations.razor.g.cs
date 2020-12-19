@@ -110,7 +110,28 @@ using Microsoft.AspNetCore.Authorization;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Locations")]
+#nullable restore
+#line 15 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using BOMTool.M;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using BOMTool.V.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using BOMTool.M.DTOs;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Location")]
     public partial class Locations : Fluxor.Blazor.Web.Components.FluxorComponent
     {
         #pragma warning disable 1998

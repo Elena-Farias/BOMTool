@@ -13,8 +13,8 @@ namespace BOMTool.C.Data
     public class ApplicationDbContext : DbContext
 
     {
-         private User _user;
-        private readonly IConfiguration _configuration;
+        private User _user;
+       // private readonly IConfiguration _configuration;
 
         public ApplicationDbContext() : base()
         {
@@ -72,16 +72,7 @@ namespace BOMTool.C.Data
         public DbSet<Location> Location { get; set;  }
 
         public DbSet<User> User { get; set;  }
-        //public IEnumerable<object> Locations { get; internal set; }
-
-
-        public DbSet<PartNumbDto> PartNumbDtos { get; set;  }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder  optionsBuilder)
-        {
-            optionsBuilder.UseOracle(_configuration.GetValue<string>("OracleConn"));
-        }
-
+ 
         protected override void OnModelCreating(ModelBuilder Builder)
         {
             Builder.Entity<User>(x =>

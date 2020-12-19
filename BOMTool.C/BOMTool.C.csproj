@@ -7,6 +7,7 @@
 
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     <PackageReference Include="Fluxor.Blazor.Web" Version="3.9.0" />
     <PackageReference Include="Fluxor.Blazor.Web.ReduxDevTools" Version="3.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
@@ -18,8 +19,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.10" />
-    <PackageReference Include="Oracle.EntityFrameworkCore" Version="3.19.80" />
     <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.100" />
+    <PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="3.1.9" />
   </ItemGroup>
 
   <ItemGroup>
