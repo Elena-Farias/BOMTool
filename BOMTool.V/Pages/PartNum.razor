@@ -3,7 +3,7 @@
 
 <PageTitle
     Text="BOM Tool"
-    Icon="IconName.Map"
+    Icon="IconName.Archive"
 />
 
 <Row Padding="Padding.Is4.OnAll">
@@ -32,7 +32,7 @@
             <FieldLabel>
                 Enter Part Number:
             </FieldLabel>
-            <TextEdit Placeholder="Part Number..." @bind-Text="partnum" />
+            <TextEdit   Placeholder="Part Number..." @bind-Text="partnum" />
         </Field>
         <Field>
             <FieldBody >
@@ -51,7 +51,7 @@
                   Data="@PartNumState.Value.Currents"
                   Sortable="true"
                   ShowPager="true"
-                  PageSize="50">
+                  PageSize="300">
             <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.Model)" Caption="Model" Sortable="false" />
             <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.PartNum)" Caption="Part Number" Sortable="true" />
             <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.ItemDescription)" Caption="Description" Sortable="true" />

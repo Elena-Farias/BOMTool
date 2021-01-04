@@ -23,12 +23,12 @@ namespace BOMTool.C.Controller
         }
 
         
-        [HttpGet("/{OrgCode}/{PartNum}")]
-        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracle(string orgcode, string partnumb)
+        [HttpGet("{OrgCode}/{PartNum}")]
+        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracle(string orgcode, string partnum)
         {
             try
             {
-                var partNumbers = await _oracle.GetPartNumber(orgcode, partnumb);
+                var partNumbers = await _oracle.GetPartNumber(orgcode, partnum);
                 
                 return partNumbers;           
              }

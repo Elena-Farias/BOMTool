@@ -32,7 +32,7 @@ namespace BOMTool.V.Store.Features.PartNums.Effects
                 var client = _clientFactory.CreateClient("ServerAPI");
                 var loccode = action.LocationCode;
                 var partnum = action.PartNum; 
-                var ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>("PartNum/{loccode}/{partnum}");
+                var ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>($"PartNum/{loccode}/{partnum}");
 
                 _logger.LogInformation("Locations loaded successfully!");
                 dispatcher.Dispatch(new LoadPartNumsSuccessAction(ResponseData));
