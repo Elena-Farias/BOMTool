@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[8.1.0, )"
             },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.95.4, )"
+            },
             "Fluxor.Blazor.Web": {
               "target": "Package",
               "version": "[3.9.0, )"

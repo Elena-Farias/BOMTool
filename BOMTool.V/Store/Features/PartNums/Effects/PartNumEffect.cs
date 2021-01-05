@@ -15,12 +15,14 @@ namespace BOMTool.V.Store.Features.PartNums.Effects
     {
         private readonly IHttpClientFactory _clientFactory;
         private readonly ILogger<PartNumEffect> _logger;
+        public List<PartNumbDto> ResponseData { get; private set; }
 
         public PartNumEffect(ILogger<PartNumEffect> logger, IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
             _logger = logger;
         }
+               
 
         //protected override async Task HandleAsync(LoadPartNumsAction action, IDispatcher dispatcher)
         protected override async Task HandleAsync(LoadPartNumsAction action, IDispatcher dispatcher)
@@ -31,9 +33,18 @@ namespace BOMTool.V.Store.Features.PartNums.Effects
                 _logger.LogInformation("Loading Locations...");
                 var client = _clientFactory.CreateClient("ServerAPI");
                 var loccode = action.LocationCode;
-                var partnum = action.PartNum; 
-                var ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>($"PartNum/{loccode}/{partnum}");
+                var partnum = action.PartNum;
+                var isexport = action.Export;
 
+                if (isexport)
+                {
+                    ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>($"PartNum/{loccode}/{partnum}/Export");
+                }
+                else
+                {
+                    ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>($"PartNum/{loccode}/{partnum}");
+                }                
+                
                 _logger.LogInformation("Locations loaded successfully!");
                 dispatcher.Dispatch(new LoadPartNumsSuccessAction(ResponseData));
             }

@@ -20,27 +20,38 @@
                     <SelectItem Value="-1">
                         Seleccione Locacion
                     </SelectItem>
-                        @foreach (var locs in locations)
-                        {
-                            <SelectItem Value="@locs.Code">@locs.Name</SelectItem>
-                        }
+                    @foreach (var locs in locations)
+                    {
+                        <SelectItem Value="@locs.Code">@locs.Name</SelectItem>
+                    }
                 </Select>
-            </FieldBody>           
+            </FieldBody>
         </Field>
 
         <Field ColumnSize="ColumnSize.Is3">
             <FieldLabel>
                 Enter Part Number:
             </FieldLabel>
-            <TextEdit   Placeholder="Part Number..." @bind-Text="partnum" />
+            <TextEdit Placeholder="Part Number..." @bind-Text="partnum" />
         </Field>
+
         <Field>
-            <FieldBody >
+            <FieldBody>
                 <Button Color="Color.Primary"
-                        Clicked="@(() => SeachPartNum(selectedLocation,partnum))">
+                        Clicked="@(() => SeachPartNum(selectedLocation,partnum,false))">
                     <Icon Name="IconName.Search" />
                     Buscar
-                </Button>                        
+                </Button>
+            </FieldBody>
+        </Field>
+
+        <Field>
+            <FieldBody>
+                <Button Color="Color.Success"
+                        Clicked="@(() => SeachPartNum(selectedLocation,partnum,true))">
+                    <Icon Name="IconName.FileDownload" />
+                    Exportar a Excel
+                </Button>
             </FieldBody>
         </Field>
     }

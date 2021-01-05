@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Blazorise;
-using BOMTool.M;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
-using BOMTool.M.DTOs;
 using BOMTool.V.Services;
 using BOMTool.V.Store.State;
 using Fluxor;
@@ -29,12 +23,12 @@ namespace BOMTool.V.Pages
         private bool isLoading = false;
 
 
-       public async Task SeachPartNum(string locatioName, string partnumber)
+       public async Task SeachPartNum(string locatioName, string partnumber, bool export)
         {
             if (partnum != "")
             {
                 isLoading = true;
-                stateServices.LoadPartNums(locatioName, partnumber); 
+                stateServices.LoadPartNums(locatioName, partnumber, export); 
             }
         }
     }

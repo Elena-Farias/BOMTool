@@ -9,7 +9,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "BOMTool.V.dll": "sha256-T62kIosB1Cd8PyhMGdNAJVEymy28LOEi2mRNP5TrvIU=",
+      "BOMTool.V.dll": "sha256-aFxp+zPmDsOYfBPxKyiCFTtwr5sFbvaOQTNA7eWmYlo=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -79,7 +79,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "BOMTool.V.pdb": "sha256-2wrZKV37hdavRGjPhE3ZlHawdifsXzhI4HC7yHSCpAM=",
+      "BOMTool.V.pdb": "sha256-8cDN3e\/WYBsrsm8XOXShXCaJGJrf98yV9txU4FXE7bk=",
       "BOMTool.M.pdb": "sha256-MepQMwdY8OznXjt+NjcYzak7a\/H0PmiwIL6c76lSe+k="
     },
     "runtime": {

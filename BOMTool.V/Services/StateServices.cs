@@ -20,10 +20,10 @@ namespace BOMTool.V.Services
             _dispacher.Dispatch(new LoadLocationsAction());
         }
 
-        public void LoadPartNums(string locationCode, string partnum)
+        public void LoadPartNums(string locationCode, string partnum, bool export)
         {
             _logger.LogInformation("Issuing action to load Locations...");
-            _dispacher.Dispatch(new LoadPartNumsAction(locationCode, partnum));
+            _dispacher.Dispatch(new LoadPartNumsAction(locationCode, partnum, export));
         }
     }
  }
