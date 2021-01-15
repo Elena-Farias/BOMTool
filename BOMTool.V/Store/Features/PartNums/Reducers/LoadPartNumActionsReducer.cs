@@ -11,7 +11,7 @@ namespace BOMTool.V.Store.Features.PartNums.Reducers
             new PartNumState(true, null, null, state.Current);
 
         [ReducerMethod]
-        public static PartNumState ReduceLoadPartNumsFailureAction(PartNumState state, LoadPartNumsSuccessAction action) =>
+        public static PartNumState ReduceLoadPartNumsSuccessAction(PartNumState state, LoadPartNumsSuccessAction action) =>
             new PartNumState(false, null, action.PartNums, state.Current);
 
         [ReducerMethod]

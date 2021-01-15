@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "S1Kaj9mFirqTiEoQdjNewmqZvJV51tsCcEO3IlOIx7dZAivu2pM/jKRkCS8jHDngO4psqzJh4JiyYLqnS7Io2Q==",
+  "dgSpecHash": "8zCeoWYHwB+kZ0a6Z7M+TvrZVM4JGJ5Vma7NYuyC5GhAFYZJGtYL5ykYyP5o6GDB3NuXcNAEYQDBGB50qHC1Zg==",
   "success": true,
   "projectFilePath": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\BOMTool.V.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\610092404\\.nuget\\packages\\blazored.toast\\3.1.2\\blazored.toast.3.1.2.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\blazorise\\0.9.2.3\\blazorise.0.9.2.3.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\blazorise.bootstrap\\0.9.2.3\\blazorise.bootstrap.0.9.2.3.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\blazorise.datagrid\\0.9.2.3\\blazorise.datagrid.0.9.2.3.nupkg.sha512",

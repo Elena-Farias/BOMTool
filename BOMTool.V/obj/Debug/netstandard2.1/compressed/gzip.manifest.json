@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\aFxp_zPmDsOYfBPxKyiCFTtwr5sFbvaOQTNA7eWmYlo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\NbHHa0ENTP_t-uoJidb0MextIhvCxi9BDttOloQ-exE=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BOMTool.V.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BOMTool.V.dll.gz"
     },
@@ -156,9 +156,34 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\j_p2LuvXtdCS2hFLlpYmpHuB_IB9IXbGjSM86bc0fFE=.hash",
-      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazorise.Icons.FontAwesome.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazorise.Icons.FontAwesome.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=.hash",
+      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Newtonsoft.Json.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SnlpX7tqR4Or48_LUVR7CMv3xLhjy1JBnmDfQCb2GwM=.hash",
+      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.Toast.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.Toast.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6q7n5uluNOxeOXWmdgNACFYCHlSFwLGXfvdaSx1fAJk=.hash",
+      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FuzsEzH9sQ12Pdrqqk5WbdB_Fzy18MOe1W7UT3PW_0c=.hash",
+      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Forms.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tmnkCmP9OzLUkpQ3LP7PRosi7gt5pyfEZCM6aqAokFI=.hash",
+      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.ComponentModel.Annotations.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.Annotations.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LIfCYwg_PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=.hash",
+      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.ComponentModel.DataAnnotations.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\q_HGbzWFWgtjFuiEwuUR1EmwN0w0pWbg9_N_o3YLQ3A=.hash",
@@ -176,29 +201,14 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\j_p2LuvXtdCS2hFLlpYmpHuB_IB9IXbGjSM86bc0fFE=.hash",
+      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazorise.Icons.FontAwesome.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazorise.Icons.FontAwesome.dll.gz"
+    },
+    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\vAjQeHmU6uZH64TVPElzfGmt007PznUKmd2x3YkBLQA=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazorise.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazorise.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tmnkCmP9OzLUkpQ3LP7PRosi7gt5pyfEZCM6aqAokFI=.hash",
-      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.ComponentModel.Annotations.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.Annotations.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LIfCYwg_PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=.hash",
-      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.ComponentModel.DataAnnotations.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FuzsEzH9sQ12Pdrqqk5WbdB_Fzy18MOe1W7UT3PW_0c=.hash",
-      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Forms.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6q7n5uluNOxeOXWmdgNACFYCHlSFwLGXfvdaSx1fAJk=.hash",
-      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\h2AapWWKHFNKXcAQwgQ-7TS-LA4HLtpF07O8PQq2etY=.hash",
@@ -214,11 +224,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\s0QijizafibSJNgn73gs4gZkGWTvxzSA4U1LoQ2_Uc8=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Fluxor.Blazor.Web.ReduxDevTools.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Fluxor.Blazor.Web.ReduxDevTools.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=.hash",
-      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Newtonsoft.Json.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\HvOg06jVjr-ZAogAi0BkqUQb50gbHbYIixZlJZuF-5E=.hash",
@@ -251,11 +256,6 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazorise.DataGrid.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\J_vWWT0tr-0-txfRr3MnHrl-szrFBsx0vhyPpL46BC4=.hash",
-      "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazorise.Sidebar.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazorise.Sidebar.dll.gz"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\emG_z_79BAHEjLoWsETuBYwQ0KZAZn7IsDOi7JqyYCk=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Http.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Http.dll.gz"
@@ -276,7 +276,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4CRvqmXPAA70z-DwC_KGUvKV6AkZWRPKRMf9ZU-lldk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Cn2zB-RJXI4AGY-VRrdyqq-Ry8-uWvjXsrWaV7r7FoM=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BOMTool.M.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BOMTool.M.dll.gz"
     },
@@ -341,12 +341,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8cDN3e-WYBsrsm8XOXShXCaJGJrf98yV9txU4FXE7bk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\9lwDRlloWuVgz8fx71q40qwMRUnMooTvMtDfE2JHr4o=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BOMTool.V.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BOMTool.V.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\MepQMwdY8OznXjt_NjcYzak7a-H0PmiwIL6c76lSe_k=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\kj1m_U3T_nn2zIIoFNPuwRDHsvDqXkUb6ICdp9rE69A=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BOMTool.M.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BOMTool.M.pdb.gz"
     },
@@ -371,7 +371,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-MkOJkbVL77HcRlX8drrFdztK2-J4dVAqMkZ2QbZAe8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1Ayw7nFIBplzcc2Os_jNlJLN4T5zIDAgDHgdAKkOX_Y=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }

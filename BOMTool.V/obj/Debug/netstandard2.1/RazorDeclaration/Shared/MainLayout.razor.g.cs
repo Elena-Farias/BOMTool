@@ -131,26 +131,27 @@ using BOMTool.M.DTOs;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : Fluxor.Blazor.Web.Components.FluxorLayout
+#nullable restore
+#line 19 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\MainLayout.razor"
+using Blazored.Toast.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 23 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\MainLayout.razor"
-       
-
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-    }
-
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

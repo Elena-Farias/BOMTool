@@ -16,9 +16,9 @@
                 Select Location:
             </FieldLabel>
             <FieldBody>
-                <Select TValue="string" @bind-SelectedValue="selectedLocation">
+                <Select TValue="string" @bind-SelectedValue="selectedPartNum.Location">
                     <SelectItem Value="-1">
-                        Seleccione Locacion
+                        Select Locacion
                     </SelectItem>
                     @foreach (var locs in locations)
                     {
@@ -32,15 +32,15 @@
             <FieldLabel>
                 Enter Part Number:
             </FieldLabel>
-            <TextEdit Placeholder="Part Number..." @bind-Text="partnum" />
+            <MemoEdit Placeholder="Part Number..." @bind-Text="selectedPartNum.PartNum" />
         </Field>
 
         <Field>
             <FieldBody>
                 <Button Color="Color.Primary"
-                        Clicked="@(() => SeachPartNum(selectedLocation,partnum,false))">
+                        Clicked="@(() => SeachPartNum(selectedPartNum,false))">
                     <Icon Name="IconName.Search" />
-                    Buscar
+                    Search
                 </Button>
             </FieldBody>
         </Field>
@@ -48,9 +48,19 @@
         <Field>
             <FieldBody>
                 <Button Color="Color.Success"
-                        Clicked="@(() => SeachPartNum(selectedLocation,partnum,true))">
+                        Clicked="@(() => SeachPartNum(selectedPartNum,true))">
                     <Icon Name="IconName.FileDownload" />
-                    Exportar a Excel
+                    Export to Excel
+                </Button>
+            </FieldBody>
+        </Field>
+
+        <Field>
+            <FieldBody>
+                <Button Color="Color.Light"
+                        Clicked="@clearfields">                        
+                    <Icon Name="IconName.Clear" />
+                    Reset PartNum
                 </Button>
             </FieldBody>
         </Field>
@@ -63,7 +73,7 @@
                   Sortable="true"
                   ShowPager="true"
                   PageSize="300">
-            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.Model)" Caption="Model" Sortable="false" />
+            <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.Model)" Caption="Model" Sortable="true" />
             <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.PartNum)" Caption="Part Number" Sortable="true" />
             <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.ItemDescription)" Caption="Description" Sortable="true" />
             <DataGridColumn TItem="PartNumbDto" Field="@nameof(PartNumbDto.UOM)" Caption="UOM" Sortable="true" />

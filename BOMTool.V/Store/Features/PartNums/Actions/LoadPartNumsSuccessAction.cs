@@ -5,9 +5,9 @@ namespace BOMTool.V.Store.Features.PartNums.Actions
 {
     public class LoadPartNumsSuccessAction
     {
-        public LoadPartNumsSuccessAction(IEnumerable<PartNumbDto> partNum) =>
+        public LoadPartNumsSuccessAction(List<PartNumbDto> partNum) =>
             PartNums = partNum;
 
-        public IEnumerable<PartNumbDto> PartNums { get; }
+        public List<PartNumbDto> PartNums { get; }
     }
 }

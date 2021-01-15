@@ -1,4 +1,6 @@
-﻿@inherits Fluxor.Blazor.Web.Components.FluxorLayout
+﻿@inherits LayoutComponentBase
+@using Blazored.Toast.Configuration
+
 
 <Layout Sider="true">
     <LayoutSider>
@@ -20,11 +22,3 @@
     </Layout>
 </Layout>
 
-@code {
-
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-    }
-
-}

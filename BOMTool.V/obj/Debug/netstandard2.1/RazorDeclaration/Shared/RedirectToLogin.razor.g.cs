@@ -132,6 +132,20 @@ using BOMTool.M.DTOs;
 #line hidden
 #nullable disable
 #nullable restore
+#line 18 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\RedirectToLogin.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
@@ -146,7 +160,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 3 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\RedirectToLogin.razor"
+#line 4 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\RedirectToLogin.razor"
        
     protected override void OnInitialized()
     {

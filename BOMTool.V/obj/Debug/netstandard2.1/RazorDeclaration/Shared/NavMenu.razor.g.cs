@@ -131,6 +131,20 @@ using BOMTool.M.DTOs;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 18 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -139,18 +153,18 @@ using BOMTool.M.DTOs;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
+#line 47 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
        RenderFragment customIcon =
 
 #line default
 #line hidden
 #nullable disable
         (__builder2) => {
-            __builder2.AddMarkupContent(0, "<img src=\"Images/brand-logo.png\" style=\"width:100px; height: 42px\">");
+            __builder2.AddMarkupContent(0, "<img src=\"/brand-logo.png\" style=\"width:100px; height: 42px\">");
         }
 #nullable restore
-#line 49 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
-                                                                                                        ;
+#line 47 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
+                                                                                                  ;
 
 #line default
 #line hidden

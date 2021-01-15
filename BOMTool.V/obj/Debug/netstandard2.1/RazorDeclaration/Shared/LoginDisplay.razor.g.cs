@@ -125,6 +125,20 @@ using BOMTool.M.DTOs;
 #line hidden
 #nullable disable
 #nullable restore
+#line 18 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
@@ -146,12 +160,25 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
+#line 45 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
       
-    private async Task BeginSignOut(MouseEventArgs args)
+    private bool siderVisible = true;
+    private async Task BeginSignOut()
     {
         await SignOutManager.SetSignOutState();
         Navigation.NavigateTo("authentication/logout");
+    }
+
+    private void NavigateToProfile()
+    {
+        Navigation.NavigateTo("/profile");
+    }
+
+    void ToggleSidebar()
+    {
+
+        siderVisible = !siderVisible;
+        StateHasChanged();
     }
 
 #line default

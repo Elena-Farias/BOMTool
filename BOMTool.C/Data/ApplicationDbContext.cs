@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using BOMTool.M.DTOs;
 
 namespace BOMTool.C.Data
 {

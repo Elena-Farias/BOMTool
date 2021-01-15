@@ -11,6 +11,7 @@ using System.Reflection;
 using BOMTool.V.Helpers;
 using BOMTool.V.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+using Blazored.Toast;
 
 namespace BOMTool.V
 {
@@ -69,14 +70,16 @@ namespace BOMTool.V
                     p.RequireRole("Administrator");
                 });
             });
-                    
 
-         //   builder.Services.AddSingleton(new HttpClient
-          //  {
-          //      BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
-          //  });
 
-           //// await builder.Build().RunAsync();
+            //   builder.Services.AddSingleton(new HttpClient
+            //  {
+            //      BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+            //  });
+
+            //// await builder.Build().RunAsync();
+
+            builder.Services.AddBlazoredToast();
 
             var host = builder.Build();
            

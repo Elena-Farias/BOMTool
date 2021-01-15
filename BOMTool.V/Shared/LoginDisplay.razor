@@ -4,20 +4,61 @@
 @inject NavigationManager Navigation
 @inject SignOutSessionStateManager SignOutManager
 
-<AuthorizeView>
-    <Authorized>
-        Hello, @context.User.Identity.Name!
-        <button class="nav-link btn btn-link" @onclick="BeginSignOut">Log out</button>
-    </Authorized>
-    <NotAuthorized>
-        <a href="authentication/login">Log in</a>
-    </NotAuthorized>
-</AuthorizeView>
+<Bar Style="height: 64px;" Breakpoint="Breakpoint.Desktop" Background="Background.Secondary" ThemeContrast="ThemeContrast.Dark">
+    <BarMenu>
+        <BarStart>
+            <BarItem>
+                <BarLink To="/">
+                    <Heading Size="HeadingSize.Is2">
+                        BOM Tool
+                    </Heading>
+                </BarLink>
+            </BarItem>    
+        </BarStart>
+        <BarEnd>
+            <AuthorizeView>
+                <Authorized>
+                    <BarItem>
+                        <BarDropdown>
+                            <BarDropdownToggle><Icon Name="IconName.User" /> @context.User.Identity.Name</BarDropdownToggle>
+                            <BarDropdownMenu Style="padding: 15px;" RightAligned="true">
+                                <BarDropdownItem>
+                                    <Button Clicked="@BeginSignOut">Sign out</Button>
+                                </BarDropdownItem>
+                            </BarDropdownMenu>
+                        </BarDropdown>
+                    </BarItem>
+                </Authorized>
+                <NotAuthorized>
+                    <BarItem>
+                        <BarLink To="authentication/login">
+                            <BarIcon IconName="Blazorise.Icons.FontAwesome.FontAwesomeIcons.SignInAlt" /> Sign in
+                        </BarLink>
+                    </BarItem>
+                </NotAuthorized>
+            </AuthorizeView>
+        </BarEnd>
+    </BarMenu>
+</Bar>
+
 
 @code{
-    private async Task BeginSignOut(MouseEventArgs args)
+    private bool siderVisible = true;
+    private async Task BeginSignOut()
     {
         await SignOutManager.SetSignOutState();
         Navigation.NavigateTo("authentication/logout");
+    }
+
+    private void NavigateToProfile()
+    {
+        Navigation.NavigateTo("/profile");
+    }
+
+    void ToggleSidebar()
+    {
+
+        siderVisible = !siderVisible;
+        StateHasChanged();
     }
 }

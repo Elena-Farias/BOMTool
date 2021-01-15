@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Blazorise;
 using BOMTool.M;
 using BOMTool.V.Services;
@@ -32,17 +29,21 @@ namespace BOMTool.V.Pages
         private bool IsNew;
         private Location selected = new Location();
 
-        private void ShowModal(Location location, bool isNew)
+        public void ShowModal(Location location, bool isNew)
         {
             IsNew = isNew;
             selected = location;
             modalRef.Show();
+
         }
 
-        private void HideModal()
+        public async Task AddLocation()
         {
             modalRef.Hide();
+            stateServices.SaveLocation(selected, IsNew); 
+
         }
+
 
     }
 }

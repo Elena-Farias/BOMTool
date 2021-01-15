@@ -131,6 +131,20 @@ using BOMTool.M.DTOs;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 18 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -138,6 +152,21 @@ using BOMTool.M.DTOs;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 28 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
+      
+    private Theme theme = new Theme
+    {
+        BackgroundOptions = new ThemeBackgroundOptions
+        {
+            Primary = "#68478D",
+            Secondary = "#A1A1A4"
+        }
+    };
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

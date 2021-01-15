@@ -8,10 +8,7 @@
 
 else
 {
-    <AuthorizeView>
-        <Authorized>
-            Hello, @context.User.Identity.Name!
-          </Authorized>
+    <AuthorizeView>        
         <NotAuthorized>
             <p> Sorry Not Authenticate Try Again</p>
         </NotAuthorized>
@@ -22,7 +19,6 @@ else
             <Heading Size="HeadingSize.Is4">Location Catalog</Heading>
         </Column>
 
-        <Paragraph Alignment="TextAlignment.Center"> <DisplayHeading Size="DisplayHeadingSize.Is4">Locations</DisplayHeading> </Paragraph>
         <DataGrid TItem="Location"
                   Data="@LocationsState.Value.Currents"
                   Sortable="true"
@@ -31,16 +27,44 @@ else
                   PageSize="20">
             <DataGridColumn TItem="Location" Field="@nameof(Location.Id)" Caption="Id" Sortable="false" />
             <DataGridColumn TItem="Location" Field="@nameof(Location.Name)" Caption="Plant Name" Sortable="true" />
-            <DataGridColumn TItem="Location" Field="@nameof(Location.Code)" Caption="Plant Name" Sortable="true" />
+            <DataGridColumn TItem="Location" Field="@nameof(Location.Code)" Caption="Location Code" Sortable="true" />
+            <DataGridColumn TItem="Location" Field="@nameof(Location.Active)" Caption="Active" Sortable="false" />
             <DataGridCommandColumn TItem="Location" EditCommandAllowed="true">
                 <EditCommandTemplate>
                     <Button Color="Color.Primary" Clicked="@(() => ShowModal((context.Item as Location), false))">Edit</Button>
                 </EditCommandTemplate>
                 <NewCommandTemplate>
-                    <Button Color="Color.Primary" Clicked="@(() => ShowModal(new Location(), true))">New</Button>                        
+                    <Button Color="Color.Primary" Clicked="@(() => ShowModal(new Location(), true))">New</Button>
                 </NewCommandTemplate>
-             </DataGridCommandColumn>
-         </DataGrid>
+            </DataGridCommandColumn>
+        </DataGrid>
+
+        <Modal @ref="modalRef">
+            <ModalBackdrop />
+            <ModalContent Size="ModalSize.Large" IsCentered="true">
+                <ModalHeader>
+                    <ModalTitle>Location Data</ModalTitle>
+                    <CloseButton Clicked="@(() => modalRef.Hide())" />
+                </ModalHeader>
+                <ModalBody>
+                    <Field>
+                        <FieldLabel>Name</FieldLabel>
+                        <TextEdit Placeholder="Name..." @bind-Text="@selected.Name" />
+                    </Field>
+                    <Field>
+                        <FieldLabel>Location Code</FieldLabel>
+                        <TextEdit Placeholder="Location code.." @bind-Text="@selected.Code" />
+                    </Field>
+                    <Field>
+                        <Check TValue="bool" @bind-Checked="@selected.Active">Active</Check>
+                    </Field>
+                    <ModalFooter>
+                        <Button Color="Color.Light" Clicked="@(() => AddLocation())">Save</Button>
+                        <Button Color="Color.Warning" Clicked="@(() => modalRef.Hide())">Cancel</Button>
+                    </ModalFooter>
+                </ModalBody>
+            </ModalContent>s
+        </Modal>
 
 }
 

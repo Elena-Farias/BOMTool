@@ -3,7 +3,7 @@
      Breakpoint="Breakpoint.Desktop"
      NavigationBreakpoint="Breakpoint.Tablet"
      ThemeContrast="ThemeContrast.Light"
-     Background="Background.Light">
+     Background="Background.Primary">
     <BarBrand>
         <BarItem>
             <BarLink To="">
@@ -14,37 +14,35 @@
     </BarBrand>
     <BarMenu>
         <BarStart>
-            <BarItem>
-                <BarDropdown>
-                    <BarDropdownToggle>
-                        <BarIcon IconName="IconName.Edit" />
-                        Administration
-                    </BarDropdownToggle>
-                    <BarDropdownMenu>
-                        <BarDropdownItem>
-                            <BarLink To="Location">
-                                <BarIcon IconName="IconName.Store" />
-                                Location
-                            </BarLink>
-                        </BarDropdownItem>
-                        <BarDropdownItem>
-                            <BarLink To="User">
-                                <BarIcon IconName="IconName.Users" />
-                                Users
-                            </BarLink>
-                        </BarDropdownItem>
-                    </BarDropdownMenu>
-                </BarDropdown>
-            </BarItem>
-            <BarItem>
-                <BarLink To="PartNum">
-                    <BarIcon IconName="IconName.Circle" />
-                    BOM Tool
-                </BarLink>
-            </BarItem>
+            <AuthorizeView Roles="BOMTool Administrator">
+                <BarItem>
+                    <BarDropdown>
+                        <BarDropdownToggle>
+                            <BarIcon IconName="IconName.Edit" />
+                            Administration
+                        </BarDropdownToggle>
+                        <BarDropdownMenu>
+                            <BarDropdownItem>
+                                <BarLink To="Location">
+                                    <BarIcon IconName="IconName.Store" />
+                                    Location
+                                </BarLink>
+                            </BarDropdownItem>
+                        </BarDropdownMenu>
+                    </BarDropdown>
+                </BarItem>
+            </AuthorizeView>
+            <AuthorizeView Roles="BOMTool User">
+                <BarItem>
+                    <BarLink To="PartNum">
+                        <BarIcon IconName="IconName.Circle" />
+                        BOM Tool
+                    </BarLink>
+                </BarItem>
+            </AuthorizeView>
         </BarStart>
     </BarMenu>
 </Bar>
 
-@code {RenderFragment customIcon =@<img src="Images/brand-logo.png" style="width:100px; height: 42px" />;
+@code {RenderFragment customIcon =@<img src="/brand-logo.png" style="width:100px; height: 42px" />;
 }

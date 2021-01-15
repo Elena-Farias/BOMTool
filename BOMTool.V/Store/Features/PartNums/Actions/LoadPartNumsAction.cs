@@ -1,18 +1,16 @@
-﻿using BOMTool.V.Pages;
+﻿using BOMTool.M.DTOs;
 
 namespace BOMTool.V.Store.Features.PartNums.Actions
 {
     public class LoadPartNumsAction
     {
-        public LoadPartNumsAction(string locationcode, string partnum, bool export)
+        public LoadPartNumsAction(PartNumbDto partnumbs, bool export)
         {
-            LocationCode = locationcode;
-            PartNum = partnum;
+            PartNumbs = partnumbs;
             Export = export; 
         }
 
-        public string LocationCode { get; }
-        public string PartNum { get; }
+        public PartNumbDto PartNumbs { get; }
         public bool Export { get; }
     }
 }

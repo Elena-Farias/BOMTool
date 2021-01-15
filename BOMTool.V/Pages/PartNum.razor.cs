@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components;
 using BOMTool.V.Services;
 using BOMTool.V.Store.State;
 using Fluxor;
+using BOMTool.M.DTOs;
 
 namespace BOMTool.V.Pages
 {
@@ -12,24 +13,29 @@ namespace BOMTool.V.Pages
         IState<PartNumState> PartNumState { get; set; }
 
         [Inject]
-        public IState<LocationsState> LocationState { get; set; }
+        IState<LocationsState> LocationState { get; set; }
 
         [Inject]
         StateServices stateServices { get; set; }
 
-        private string selectedLocation;
-        private string partnum;
-        private bool notFound = true;
+        private PartNumbDto selectedPartNum = new PartNumbDto(); 
+
         private bool isLoading = false;
 
-
-       public async Task SeachPartNum(string locatioName, string partnumber, bool export)
+        
+        public async Task SeachPartNum(PartNumbDto partnumbers, bool export)
         {
-            if (partnum != "")
+            if (selectedPartNum.PartNum != "")
             {
                 isLoading = true;
-                stateServices.LoadPartNums(locatioName, partnumber, export); 
+                stateServices.LoadPartNums(partnumbers, export); 
             }
         }
+
+        public void clearfields()
+        {
+            selectedPartNum.PartNum = null;          
+        }
+       
     }
 }

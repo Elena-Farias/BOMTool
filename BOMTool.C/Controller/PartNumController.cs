@@ -8,7 +8,8 @@ using System.Collections.Generic;
 using ClosedXML.Excel;
 using System.IO;
 using Microsoft.AspNetCore.Http;
-using System.Web; 
+using System.Web;
+using Newtonsoft.Json;
 
 namespace BOMTool.C.Controller
 {
@@ -18,6 +19,10 @@ namespace BOMTool.C.Controller
     {
         private ApplicationDbContext _context;
         private IOracleServices _oracle;
+       // PartNumbDto ListPartNumbs; 
+        private class partNumlist
+        {
+        }
 
         public PartNumController(ApplicationDbContext context, IOracleServices oracle)
         {
@@ -25,14 +30,16 @@ namespace BOMTool.C.Controller
             _oracle = oracle; 
         }
 
-        
-        [HttpGet("{OrgCode}/{PartNum}")]
-        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracle(string orgcode, string partnum)
+
+        [HttpGet]
+        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracle(string PNDto)
         {
             try
             {
-                var partNumbers = await _oracle.GetPartNumber(orgcode, partnum);
-                
+                PartNumbDto data = JsonConvert.DeserializeObject<PartNumbDto>(PNDto);
+                var partnum = data.PartNum;
+                var orgcode = data.Location;
+                var partNumbers = await _oracle.GetPartNumber(orgcode, partnum);                
                 return partNumbers;           
              }
 
@@ -43,16 +50,20 @@ namespace BOMTool.C.Controller
 
         }
 
-        [HttpGet("{OrgCode}/{PartNum}/Export")]
-        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracleToExport(string orgcode, string partnum)
+        [HttpGet("Export")]
+        //public async Task<ActionResult<List<PartNumbDto>>> GetFromOracleToExport(string orgcode, string partnum)
+        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracleToExport(string PNDto)
         {
             try
             {
+                PartNumbDto data = JsonConvert.DeserializeObject<PartNumbDto>(PNDto);
+                var partnum = data.PartNum;
+                var orgcode = data.Location;
                 var partNumberstoexport = await _oracle.GetPartNumber(orgcode, partnum);
 
                 var path = $"C:/Users/{Environment.UserName}/Desktop/"; 
                 var filename =$"BOMTool_{DateTime.Now.ToString("yyyyMMdd")}.xlsx"; 
-
+                
 
                 XLWorkbook workbook = new XLWorkbook();
                 IXLWorksheet worksheet = workbook.Worksheets.Add("BOMTool");

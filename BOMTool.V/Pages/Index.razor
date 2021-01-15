@@ -1,13 +1,16 @@
 ﻿@page "/"
 
-<h1><p><fore color="DarkBlue"> BOM TOOL  !</fore></p></h1>
 
+<Row Padding="Padding.Is4.OnAll">
+    <Column ColumnSize="ColumnSize.Is12">
+        <Heading Size="HeadingSize.Is1">
+            Welcome to BOM Tool !
+        </Heading>
+    </Column>
+</Row>
 
-<AuthorizeView>
-    <Authorized>
-        Hello, @context.User.Identity.Name!     
-    </Authorized>
+<AuthorizeView>  
     <NotAuthorized>
-        <p> Sorry Not Authenticate Try Again</p>
+        <p></p>
     </NotAuthorized>
 </AuthorizeView>

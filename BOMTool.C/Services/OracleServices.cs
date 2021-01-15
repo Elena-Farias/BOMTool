@@ -4,11 +4,11 @@ using Microsoft.Extensions.Configuration;
 using Oracle.ManagedDataAccess.Client;
 using System.Data;
 using BOMTool.M.DTOs;
-using System.Globalization;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace BOMTool.C.Services
 {
@@ -17,7 +17,8 @@ namespace BOMTool.C.Services
         private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
         private List<PartNumbDto> bulkpartnum;
-        private string[] partnumbsplit; 
+        private IEnumerable<PartNumbDto> partNumbDtos; 
+        private string[] partnumbsplit;
 
         public OracleServices(IConfiguration configuration, ApplicationDbContext context)
         {
@@ -40,8 +41,11 @@ namespace BOMTool.C.Services
         }
 
         public Task<List<PartNumbDto>> GetPartNumber(string OrgCode, string partNumber)
+        //public Task<List<PartNumbDto>> GetPartNumber(string OrgCode, PartNumbDto partNumbDtos)
         {
-            var oracleCredentials = new OracleCredential(_configuration.GetValue<string>("OracleUser"), OracleSecurePassword(_configuration.GetValue<string>
+            partNumber = partNumber.Replace("\n", ",");
+
+         var oracleCredentials = new OracleCredential(_configuration.GetValue<string>("OracleUser"), OracleSecurePassword(_configuration.GetValue<string>
                 ("OraclePassword")));
 
             using (var connetion = new OracleConnection(_configuration.GetConnectionString("Oracle"), oracleCredentials))
@@ -85,7 +89,6 @@ namespace BOMTool.C.Services
                             OracleCommandBuilder builder = new OracleCommandBuilder(adapter);
 
                             adapter.Fill(dataset);
-
 
                             try
                             {

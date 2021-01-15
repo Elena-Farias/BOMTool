@@ -1,8 +1,12 @@
 ﻿using Fluxor;
 using Microsoft.Extensions.Logging;
-using BOMTool.V.Store.Features.Locations.Actions;
+using BOMTool.V.Store.Features.Locations.Actions.LoadLocations;
 using BOMTool.V.Store.Features.PartNums.Actions;
-
+using BOMTool.M;
+using BOMTool.V.Store.Features.Locations.Actions.SaveLocation;
+using System;
+using BOMTool.M.DTOs;
+using System.Collections.Generic;
 
 namespace BOMTool.V.Services
 {
@@ -20,10 +24,25 @@ namespace BOMTool.V.Services
             _dispacher.Dispatch(new LoadLocationsAction());
         }
 
-        public void LoadPartNums(string locationCode, string partnum, bool export)
+        public void SaveLocation(Location location, bool isNew)
         {
-            _logger.LogInformation("Issuing action to load Locations...");
-            _dispacher.Dispatch(new LoadPartNumsAction(locationCode, partnum, export));
+            _logger.LogInformation("Issuing action to Add Locations...");
+            _dispacher.Dispatch(new SaveLocationAction(location, isNew));
+        }
+
+        //public void LoadPartNums(string locationCode, string partnum, bool export)
+        public void LoadPartNums(PartNumbDto partnumbs, bool export)
+        {
+            try
+            {
+                _logger.LogInformation("Issuing action to load PartNum...");
+                _dispacher.Dispatch(new LoadPartNumsAction(partnumbs, export));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error loading PartNumbers, reason: {ex.Message}");
+            }
         }
     }
  }
+

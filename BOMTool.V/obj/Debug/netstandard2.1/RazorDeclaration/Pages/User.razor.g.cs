@@ -131,6 +131,20 @@ using BOMTool.M.DTOs;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 18 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/User")]
     public partial class User : Microsoft.AspNetCore.Components.ComponentBase
     {
