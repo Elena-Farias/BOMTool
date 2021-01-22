@@ -491,6 +491,6 @@ C:\Code\BOMToolVS\BOMTool\BOMTool.V\bin\Debug\netstandard2.1\Faso.Blazor.SpinKit
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\xF7tQm77ONxvC0vTccvuZ6CnJ5sMabYcBrFHGOBLFa0=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\compressed\_framework\_bin\Faso.Blazor.SpinKit.dll.gz
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\compressed\_framework\_bin\Faso.Blazor.SpinKit.dll.br
-C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\OD4xDoF5Ciuh-d-Txoc3w06uwF6GuWHEt3kUSJtDbV4=.hash
-C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\4E2vK7U5cYyQ4C352C7jEwkwBQ-wJRYLkXMJ2X2tqf8=.hash
-C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\pKGehEIn5ENiGX-N9Fxa2PsrWSv1r28PaOHythAejH8=.hash
+C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\J82To-EvZNLjnMpgeKFvOGIWrSArxfuJkFImEhjBTUA=.hash
+C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\bWAHoe4Aa9yLMrLfDHP8ELIEdVfdbX3rNTYC7f2mNeI=.hash
+C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\GfpP7AefHFGPpXDgePAup-NijoFNtguGG2vCKJnPQec=.hash

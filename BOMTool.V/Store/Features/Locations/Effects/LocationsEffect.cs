@@ -16,7 +16,8 @@ namespace BOMTool.V.Store.Features.Locations.Effects
     {
         private readonly IHttpClientFactory _clientFactory;
         private readonly ILogger<LocationsEffect> _logger;
-        public IEnumerable<Location> Locations; 
+        public IEnumerable<Location> Locations;
+        public HttpResponseMessage response; 
 
         public LocationsEffect(ILogger<LocationsEffect>logger, IHttpClientFactory clientFactory)
         {
@@ -26,7 +27,6 @@ namespace BOMTool.V.Store.Features.Locations.Effects
 
         [EffectMethod]
         public async Task HandleLoadLocationAction(LoadLocationsAction action, IDispatcher dispatcher)
-        // protected async Task HandleLoadLocationsAction(LoadLocationsAction action, IDispatcher dispatcher)
         { 
             try
             {
@@ -52,25 +52,30 @@ namespace BOMTool.V.Store.Features.Locations.Effects
                 _logger.LogInformation("Add Location...");
                 var endpoint = "/v1/Location";
                 var client = _clientFactory.CreateClient("ServerAPI");
+
                 if (action.IsNew)
                 {
-                    var response = await client.PostAsJsonAsync(endpoint, action.Location);
+                    response = await client.PostAsJsonAsync(endpoint, action.Location);
                 }
                 else
                 {
-                    var response = await client.PutAsJsonAsync<Location>(endpoint, action.Location);
+                    response = await client.PutAsJsonAsync(endpoint, action.Location);
                 }
 
-                _logger.LogInformation("Location added successfully...");
-                dispatcher.Dispatch(new SaveLocationsSuccessAction(action.Location));
-                //dispatcher.Dispatch(new SaveLocationsSuccessAction(Locations));
+                if (response.IsSuccessStatusCode)
+                {
+                    var ResponseData = await client.GetFromJsonAsync<IEnumerable<Location>>("Location");
+
+                    _logger.LogInformation("Locations added successfully...");
+                    dispatcher.Dispatch(new LoadLocationsSuccessAction(ResponseData));
+                }
 
             }
 
             catch (Exception e)
             {
                 _logger.LogError($"Error loading Location,  (e.Message)");
-                dispatcher.Dispatch(new SaveLocationsFailureAction(e.Message));
+                dispatcher.Dispatch(new LoadLocationsFailureAction(e.Message));
             }
 
         }

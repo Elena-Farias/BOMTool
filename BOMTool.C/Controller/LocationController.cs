@@ -72,17 +72,15 @@ namespace BOMTool.C.Controller
         }
 
         [HttpPut]
-        public ActionResult UpdatePlant(Location location)
+        public async Task<IActionResult> UpdatePlant(Location location)
         {
             try
             {
-                location.UpdatedAt = DateTime.Now;
-
-                _context.Location.Update(location);
-                _context.SaveChanges();
+                _context.Entry(location).State = EntityState.Modified; 
+                await _context.SaveChangesAsync();
 
                 return NoContent();
-                //return RedirectToAction("GetLocation"); 
+        
             }
             catch (Exception ex)
             {
