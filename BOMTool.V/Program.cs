@@ -12,6 +12,7 @@ using BOMTool.V.Helpers;
 using BOMTool.V.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Blazored.Toast;
+using Toolbelt.Blazor.Extensions.DependencyInjection;
 
 namespace BOMTool.V
 {
@@ -31,6 +32,8 @@ namespace BOMTool.V
            .AddFontAwesomeIcons();
 
             builder.RootComponents.Add<App>("app");
+
+            builder.Services.AddLoadingBar();
 
             builder.Services.AddTransient<CustomAuthorizationMessageHandler>();
 
@@ -81,7 +84,9 @@ namespace BOMTool.V
 
             builder.Services.AddBlazoredToast();
 
-            var host = builder.Build();
+            var host = builder
+                      .Build()
+                      .UseLoadingBar();
            
             host.Services
               .UseBootstrapProviders()

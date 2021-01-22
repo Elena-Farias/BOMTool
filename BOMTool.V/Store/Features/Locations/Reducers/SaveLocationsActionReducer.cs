@@ -12,8 +12,8 @@ namespace BOMTool.V.Store.Features.Locations.Reducers
 
         [ReducerMethod]
         public static LocationsState ReduceSaveLocationSuccessAction(LocationsState state, SaveLocationsSuccessAction action)
-            => new LocationsState(false, null, action.Locations, state.Current);
-
+            => new LocationsState(true, null, state.Currents, action.Location);
+                
         [ReducerMethod]
         public static LocationsState ReduceSaveLocationFailureAction(LocationsState state, SaveLocationsFailureAction action)
             => new LocationsState(false, action.ErrorMessage, null, state.Current);

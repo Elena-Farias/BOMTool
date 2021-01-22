@@ -109,6 +109,19 @@
           "buildMultiTargeting/Blazorise.Sidebar.props": {}
         }
       },
+      "Faso.Blazor.SpinKit/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Faso.Blazor.SpinKit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Faso.Blazor.SpinKit.dll": {}
+        }
+      },
       "Fluxor/3.9.0": {
         "type": "package",
         "dependencies": {
@@ -740,6 +753,36 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "Toolbelt.Blazor.HttpClientInterceptor/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "3.2.0-preview2.20160.5"
+        },
+        "compile": {
+          "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll": {}
+        }
+      },
+      "Toolbelt.Blazor.LoadingBar/12.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Toolbelt.Blazor.HttpClientInterceptor": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Toolbelt.Blazor.LoadingBar.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Toolbelt.Blazor.LoadingBar.dll": {}
+        },
+        "build": {
+          "buildTransitive/Toolbelt.Blazor.LoadingBar.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Toolbelt.Blazor.LoadingBar.props": {}
+        }
+      },
       "BOMTool.M/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -865,6 +908,18 @@
         "lib/net5.0/Blazorise.Sidebar.dll",
         "lib/netstandard2.1/Blazorise.Sidebar.dll",
         "staticwebassets/blazorise.sidebar.css"
+      ]
+    },
+    "Faso.Blazor.SpinKit/1.0.1": {
+      "sha512": "GP1vDDfafbkv0/2RN/Y6kmsWphfajxoejQsA+rowDkhlghowbCjdQk2Wof/bW+5s/zcCk6uLDcip/CjCRWXpOg==",
+      "type": "package",
+      "path": "faso.blazor.spinkit/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "faso.blazor.spinkit.1.0.1.nupkg.sha512",
+        "faso.blazor.spinkit.nuspec",
+        "lib/netstandard2.0/Faso.Blazor.SpinKit.dll"
       ]
     },
     "Fluxor/3.9.0": {
@@ -2349,6 +2404,40 @@
         "version.txt"
       ]
     },
+    "Toolbelt.Blazor.HttpClientInterceptor/9.0.1": {
+      "sha512": "w+tl+ICTGoMDcCFzR5j1yM1YdIaJ+JGoCp7CBDRwnWLlCaZTaFP4JD/QWsBAtZka5RHkGD29T4vr77nvxXORNg==",
+      "type": "package",
+      "path": "toolbelt.blazor.httpclientinterceptor/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll",
+        "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.xml",
+        "nupkg-icon.png",
+        "toolbelt.blazor.httpclientinterceptor.9.0.1.nupkg.sha512",
+        "toolbelt.blazor.httpclientinterceptor.nuspec"
+      ]
+    },
+    "Toolbelt.Blazor.LoadingBar/12.1.0": {
+      "sha512": "FLNcYvy2KWNv5XdK0aGcxT1AUU6XNXlAGsp8Wkj9xmfsbYkN12mIRM4vfXP16sRwyTZTX4Nj3UWNV2hGn7yVUQ==",
+      "type": "package",
+      "path": "toolbelt.blazor.loadingbar/12.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Toolbelt.Blazor.LoadingBar.props",
+        "buildMultiTargeting/Toolbelt.Blazor.LoadingBar.props",
+        "buildTransitive/Toolbelt.Blazor.LoadingBar.props",
+        "lib/netstandard2.1/Toolbelt.Blazor.LoadingBar.dll",
+        "lib/netstandard2.1/Toolbelt.Blazor.LoadingBar.xml",
+        "nupkg-icon.png",
+        "staticwebassets/script.min.js",
+        "staticwebassets/style.min.css",
+        "toolbelt.blazor.loadingbar.12.1.0.nupkg.sha512",
+        "toolbelt.blazor.loadingbar.nuspec"
+      ]
+    },
     "BOMTool.M/1.0.0": {
       "type": "project",
       "path": "../BOMTool.M/BOMTool.M.csproj",
@@ -2364,6 +2453,7 @@
       "Blazorise.DataGrid >= 0.9.2.3",
       "Blazorise.Icons.FontAwesome >= 0.9.2.3",
       "Blazorise.Sidebar >= 0.9.2.3",
+      "Faso.Blazor.SpinKit >= 1.0.1",
       "Fluxor.Blazor.Web >= 3.9.0",
       "Fluxor.Blazor.Web.ReduxDevTools >= 3.9.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.1",
@@ -2371,7 +2461,8 @@
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.1",
       "Microsoft.Extensions.Http >= 3.1.10",
-      "System.Net.Http.Json >= 3.2.0"
+      "System.Net.Http.Json >= 3.2.0",
+      "Toolbelt.Blazor.LoadingBar >= 12.1.0"
     ]
   },
   "packageFolders": {
@@ -2447,6 +2538,10 @@
             "target": "Package",
             "version": "[0.9.2.3, )"
           },
+          "Faso.Blazor.SpinKit": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Fluxor.Blazor.Web": {
             "target": "Package",
             "version": "[3.9.0, )"
@@ -2480,6 +2575,10 @@
           "System.Net.Http.Json": {
             "target": "Package",
             "version": "[3.2.0, )"
+          },
+          "Toolbelt.Blazor.LoadingBar": {
+            "target": "Package",
+            "version": "[12.1.0, )"
           }
         },
         "imports": [

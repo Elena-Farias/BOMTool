@@ -6,9 +6,6 @@ using System;
 using BOMTool.M.DTOs;
 using System.Collections.Generic;
 using ClosedXML.Excel;
-using System.IO;
-using Microsoft.AspNetCore.Http;
-using System.Web;
 using Newtonsoft.Json;
 
 namespace BOMTool.C.Controller
@@ -39,7 +36,8 @@ namespace BOMTool.C.Controller
                 PartNumbDto data = JsonConvert.DeserializeObject<PartNumbDto>(PNDto);
                 var partnum = data.PartNum;
                 var orgcode = data.Location;
-                var partNumbers = await _oracle.GetPartNumber(orgcode, partnum);                
+                var partNumbers = await _oracle.GetPartNumber(orgcode, partnum);  
+                
                 return partNumbers;           
              }
 

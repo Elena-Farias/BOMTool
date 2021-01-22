@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace BOMTool.C.Services
 {
@@ -17,7 +17,6 @@ namespace BOMTool.C.Services
         private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
         private List<PartNumbDto> bulkpartnum;
-        private IEnumerable<PartNumbDto> partNumbDtos; 
         private string[] partnumbsplit;
 
         public OracleServices(IConfiguration configuration, ApplicationDbContext context)
@@ -28,16 +27,9 @@ namespace BOMTool.C.Services
 
         private SecureString OracleSecurePassword(string password)
         {
-            var securePassword = new SecureString();
-
-            foreach (var c in password.ToCharArray())
-            {
-                securePassword.AppendChar(c);
-            }
-
-            securePassword.MakeReadOnly();
-            return securePassword;
-
+            SecureString secpassword = new NetworkCredential("", password).SecurePassword;
+            secpassword.MakeReadOnly();
+            return secpassword;
         }
 
         public Task<List<PartNumbDto>> GetPartNumber(string OrgCode, string partNumber)

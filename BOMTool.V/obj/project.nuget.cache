@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8zCeoWYHwB+kZ0a6Z7M+TvrZVM4JGJ5Vma7NYuyC5GhAFYZJGtYL5ykYyP5o6GDB3NuXcNAEYQDBGB50qHC1Zg==",
+  "dgSpecHash": "huwDkfc5GxFUI10jYyVgmPoKd28fk75ps5n8EhR2dEGrxeum0MAIRYwqaH40bHbCFamXaC8882zey14oBVV5QQ==",
   "success": true,
   "projectFilePath": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\BOMTool.V.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\610092404\\.nuget\\packages\\blazorise.datagrid\\0.9.2.3\\blazorise.datagrid.0.9.2.3.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\blazorise.icons.fontawesome\\0.9.2.3\\blazorise.icons.fontawesome.0.9.2.3.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\blazorise.sidebar\\0.9.2.3\\blazorise.sidebar.0.9.2.3.nupkg.sha512",
+    "C:\\Users\\610092404\\.nuget\\packages\\faso.blazor.spinkit\\1.0.1\\faso.blazor.spinkit.1.0.1.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\fluxor\\3.9.0\\fluxor.3.9.0.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\fluxor.blazor.web\\3.9.0\\fluxor.blazor.web.3.9.0.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\fluxor.blazor.web.reduxdevtools\\3.9.0\\fluxor.blazor.web.reduxdevtools.3.9.0.nupkg.sha512",
@@ -61,7 +62,9 @@
     "C:\\Users\\610092404\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\system.text.encodings.web\\4.7.1\\system.text.encodings.web.4.7.1.nupkg.sha512",
     "C:\\Users\\610092404\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\610092404\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\610092404\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\610092404\\.nuget\\packages\\toolbelt.blazor.httpclientinterceptor\\9.0.1\\toolbelt.blazor.httpclientinterceptor.9.0.1.nupkg.sha512",
+    "C:\\Users\\610092404\\.nuget\\packages\\toolbelt.blazor.loadingbar\\12.1.0\\toolbelt.blazor.loadingbar.12.1.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -50,7 +50,7 @@ namespace BOMTool.V.Store.Features.Locations.Effects
             try
             {
                 _logger.LogInformation("Add Location...");
-                var endpoint = "Location";
+                var endpoint = "/v1/Location";
                 var client = _clientFactory.CreateClient("ServerAPI");
                 if (action.IsNew)
                 {
@@ -58,12 +58,12 @@ namespace BOMTool.V.Store.Features.Locations.Effects
                 }
                 else
                 {
-                    var response = await client.PutAsJsonAsync(endpoint, action.Location);
+                    var response = await client.PutAsJsonAsync<Location>(endpoint, action.Location);
                 }
 
                 _logger.LogInformation("Location added successfully...");
-                //dispatcher.Dispatch(new SaveLocationsSuccessAction(action.Location));
-                dispatcher.Dispatch(new SaveLocationsSuccessAction(Locations));
+                dispatcher.Dispatch(new SaveLocationsSuccessAction(action.Location));
+                //dispatcher.Dispatch(new SaveLocationsSuccessAction(Locations));
 
             }
 

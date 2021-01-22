@@ -1,10 +1,10 @@
 ﻿@page "/PartNum"
 @inherits Fluxor.Blazor.Web.Components.FluxorComponent
+@using Faso.Blazor.SpinKit
 
-<PageTitle
-    Text="BOM Tool"
-    Icon="IconName.Archive"
-/>
+
+<PageTitle Text="BOM Tool"
+           Icon="IconName.Archive" />
 
 <Row Padding="Padding.Is4.OnAll">
     @if (!PartNumState.Value.IsLoading && !(LocationState.Value.Currents == null))
@@ -58,13 +58,14 @@
         <Field>
             <FieldBody>
                 <Button Color="Color.Light"
-                        Clicked="@clearfields">                        
+                        Clicked="@clearfields">
                     <Icon Name="IconName.Clear" />
                     Reset PartNum
                 </Button>
             </FieldBody>
         </Field>
     }
+
 </Row>
 <Row>
     <Column>
@@ -82,4 +83,9 @@
         </DataGrid>
     </Column>
 </Row>
+
+@if (PartNumState.Value.IsLoading)
+{
+    <SpinKitThreeBounce /> 
+ }
 

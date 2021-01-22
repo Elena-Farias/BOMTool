@@ -81,8 +81,8 @@ namespace BOMTool.C.Controller
                 _context.Location.Update(location);
                 _context.SaveChanges();
 
-                //return NoContent();
-                return RedirectToAction("GetLocation"); 
+                return NoContent();
+                //return RedirectToAction("GetLocation"); 
             }
             catch (Exception ex)
             {

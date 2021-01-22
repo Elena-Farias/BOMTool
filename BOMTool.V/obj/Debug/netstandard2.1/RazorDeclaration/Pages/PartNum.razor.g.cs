@@ -145,6 +145,13 @@ using Blazored.Toast.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
+using Faso.Blazor.SpinKit;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/PartNum")]
     public partial class PartNum : Fluxor.Blazor.Web.Components.FluxorComponent
     {

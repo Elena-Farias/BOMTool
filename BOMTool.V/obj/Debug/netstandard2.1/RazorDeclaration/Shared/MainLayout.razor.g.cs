@@ -139,6 +139,13 @@ using Blazored.Toast.Services;
 #line hidden
 #nullable disable
 #nullable restore
+#line 20 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\_Imports.razor"
+using Faso.Blazor.SpinKit;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\MainLayout.razor"
 using Blazored.Toast.Configuration;
 
