@@ -25,18 +25,17 @@ namespace BOMTool.C
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(_config =>
+            services.AddCors(config =>
             {
-                _config.AddDefaultPolicy(b =>
+                config.AddDefaultPolicy(builder =>
                 {
-                    b.AllowAnyHeader();
-                    b.AllowAnyMethod();
-                    b.AllowAnyOrigin();
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyHeader();
+                    builder.AllowAnyMethod();
                 });
             });
 
-
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+           services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(config =>
         {
             config.Authority = "https://mxjuadev02.rbc.int/";
@@ -45,7 +44,7 @@ namespace BOMTool.C
         });
 
          services.AddAuthorization();
-         services.AddControllers();
+         //services.AddControllers();
 
          services.AddHttpContextAccessor();
          services.AddControllers().AddNewtonsoftJson(b =>
@@ -72,15 +71,16 @@ namespace BOMTool.C
 
             app.UseAuthentication();
             app.UseRouting();
-            app.UseAuthorization();
 
             app.UseCors();
+
+            app.UseAuthorization();
 
             //app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+               endpoints.MapControllers();               
             });
         }
     }

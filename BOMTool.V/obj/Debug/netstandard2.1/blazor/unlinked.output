@@ -29,7 +29,6 @@ obj\Debug\netstandard2.1\blazor\unlinked\System.Data.DataSetExtensions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Data.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Numerics.Vectors.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Text.Encodings.Web.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Newtonsoft.Json.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Blazored.Toast.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Web.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Forms.dll
@@ -58,16 +57,17 @@ obj\Debug\netstandard2.1\blazor\unlinked\Blazorise.Icons.FontAwesome.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Blazorise.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Blazorise.Bootstrap.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Fluxor.Blazor.Web.ReduxDevTools.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Newtonsoft.Json.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Fluxor.Blazor.Web.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Fluxor.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Configuration.Binder.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Faso.Blazor.SpinKit.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Blazorise.DataGrid.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Http.dll
-obj\Debug\netstandard2.1\blazor\unlinked\BOMTool.M.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Authorization.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Authorization.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Metadata.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+obj\Debug\netstandard2.1\blazor\unlinked\BOMTool.M.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Http.dll
 obj\Debug\netstandard2.1\blazor\unlinked\BOMTool.V.pdb
 obj\Debug\netstandard2.1\blazor\unlinked\BOMTool.M.pdb

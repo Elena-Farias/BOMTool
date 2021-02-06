@@ -38,7 +38,7 @@
         <Field>
             <FieldBody>
                 <Button Color="Color.Primary"
-                        Clicked="@(() => SeachPartNum(selectedPartNum,false))">
+                        Clicked="@(() => SeachPartNum(selectedPartNum))">
                     <Icon Name="IconName.Search" />
                     Search
                 </Button>
@@ -48,7 +48,7 @@
         <Field>
             <FieldBody>
                 <Button Color="Color.Success"
-                        Clicked="@(() => SeachPartNum(selectedPartNum,true))">
+                        Clicked="@(() => DownloadFile(selectedPartNum))">
                     <Icon Name="IconName.FileDownload" />
                     Export to Excel
                 </Button>

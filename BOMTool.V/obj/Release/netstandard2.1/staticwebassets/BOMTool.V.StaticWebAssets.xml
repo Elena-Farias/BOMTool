@@ -1,0 +1,10 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Code\BOMToolVS\BOMTool\BOMTool.V\bin\Release\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazored.Toast" Path="C:\Users\610092404\.nuget\packages\blazored.toast\3.1.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\610092404\.nuget\packages\blazorise\0.9.2.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\610092404\.nuget\packages\blazorise.bootstrap\0.9.2.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Sidebar" Path="C:\Users\610092404\.nuget\packages\blazorise.sidebar\0.9.2.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Fluxor.Blazor.Web" Path="C:\Users\610092404\.nuget\packages\fluxor.blazor.web\3.9.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\610092404\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\3.2.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Toolbelt.Blazor.LoadingBar" Path="C:\Users\610092404\.nuget\packages\toolbelt.blazor.loadingbar\12.1.0\build\..\staticwebassets\" />
+</StaticWebAssets>

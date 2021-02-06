@@ -50,7 +50,7 @@ namespace BOMTool.V.Store.Features.Locations.Effects
             try
             {
                 _logger.LogInformation("Add Location...");
-                var endpoint = "/v1/Location";
+                var endpoint = "/BOMTool/v1/Location";
                 var client = _clientFactory.CreateClient("ServerAPI");
 
                 if (action.IsNew)

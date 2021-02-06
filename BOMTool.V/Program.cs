@@ -43,6 +43,7 @@ namespace BOMTool.V
                     client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("ServerAPI"));
                 }).AddHttpMessageHandler<CustomAuthorizationMessageHandler>();
 
+            builder.Services.AddTransient<BOMToolClient>();
 
             builder.Services.AddFluxor(options =>
             {

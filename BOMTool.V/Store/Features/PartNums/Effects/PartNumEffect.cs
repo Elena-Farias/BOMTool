@@ -32,22 +32,15 @@ namespace BOMTool.V.Store.Features.PartNums.Effects
             {
                 _logger.LogInformation("Loading Locations...");
                 var client = _clientFactory.CreateClient("ServerAPI");
-                var isexport = action.Export;
 
                 PartNumbDto partnums = action.PartNumbs;
                 string PNDto = JsonConvert.SerializeObject(partnums);
 
-                if (isexport)
-                {
-                    ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>("/v1/PartNum/Export?PNDto=" + PNDto);
-                }
-                else
-                {                  
-                     ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>("/v1/PartNum/?PNDto=" + PNDto);                                     
-                }
-
+                var ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>("/BOMTool/v1/PartNum/?PNDto=" + PNDto);
                 _logger.LogInformation("Locations loaded successfully!");
                 dispatcher.Dispatch(new LoadPartNumsSuccessAction(ResponseData));
+                             
+                              
             }
             catch (AccessTokenNotAvailableException ex)
             {
