@@ -252,7 +252,6 @@ C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\Razor\Shared\PrintL
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\Razor\Shared\RedirectToLogin.razor.g.cs
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\blazor\unlinked.output
-C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\Uat3n_ObAEvxx3iSkF8lvyQnF_tbH5qwg1BApMWz_G8=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
@@ -323,14 +322,12 @@ C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\FR83bctlf
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\AbWZIV0k4GOA_qT6O3719kiJxV5XbyEXKBWjy7wE8w4=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\Cn2zB-RJXI4AGY-VRrdyqq-Ry8-uWvjXsrWaV7r7FoM=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\emG_z_79BAHEjLoWsETuBYwQ0KZAZn7IsDOi7JqyYCk=.hash
-C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\xtoFESKvSxsYgS6j-4OnLqmggYHS0SbER-LPEUWFAYg=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\kj1m_U3T_nn2zIIoFNPuwRDHsvDqXkUb6ICdp9rE69A=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\6Liitnw7DYK_PyuhGinq4Sv85OLDH1nB06VZmbu5_ns=.hash
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\compressed\_framework\_bin\BOMTool.V.dll.gz
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
@@ -494,3 +491,6 @@ C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\BOMTool.V.RazorTarg
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\BOMTool.V.csproj.CopyComplete
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\BOMTool.V.dll
 C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\BOMTool.V.pdb
+C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\9CDHnIzBwNZ_UWrLg8OTHIQ2_4jgkqCQz6KBG4uYQzc=.hash
+C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\QQAROaJNmZWXvZdMvRA6MvzGtZ9YSFQia0Gdh06qSps=.hash
+C:\Code\BOMToolVS\BOMTool\BOMTool.V\obj\Debug\netstandard2.1\integrity\qTUIjO0yN2SbSKzS7aX36uvjtFvinsGOApCUjgSRCyI=.hash

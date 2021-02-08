@@ -62,7 +62,7 @@ namespace BOMTool.C.Controller
                 XLWorkbook workbook = new XLWorkbook();
                 IXLWorksheet worksheet = workbook.Worksheets.Add("BOMTool");
                                 
-                worksheet.Cell(1, 1).Value = "Model";
+                worksheet.Cell(1, 1).Value = "Model";               
                 worksheet.Cell(1, 2).Value = "ParNum";
                 worksheet.Cell(1, 3).Value = "ItemDescription";
                 worksheet.Cell(1, 4).Value = "UOM";
@@ -72,8 +72,8 @@ namespace BOMTool.C.Controller
                  var x = 2;
                  foreach (var partn in partNumberstoexport)
                  {
-                     worksheet.Cell(x, 1).Value = partn.Model;
-                     worksheet.Cell(x, 2).Value = partn.PartNum;
+                     worksheet.Cell(x, 1).Value = string.Concat("'",partn.Model);
+                     worksheet.Cell(x, 2).Value = string.Concat("'",partn.PartNum);
                      worksheet.Cell(x, 3).Value = partn.ItemDescription;
                      worksheet.Cell(x, 4).Value = partn.UOM;
                      worksheet.Cell(x, 5).Value = partn.QTY;
