@@ -31,12 +31,12 @@ namespace BOMTool.V.Services
         }
 
         //public void LoadPartNums(string locationCode, string partnum, bool export)
-        public void LoadPartNums(PartNumbDto partnumbs)
+        public void LoadPartNums(PartNumbDto partnumbs, bool OnlyItem)
         {
             try
             {
                 _logger.LogInformation("Issuing action to load PartNum...");
-                _dispacher.Dispatch(new LoadPartNumsAction(partnumbs));
+                _dispacher.Dispatch(new LoadPartNumsAction(partnumbs, OnlyItem));
             }
             catch (Exception ex)
             {

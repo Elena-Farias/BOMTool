@@ -32,7 +32,7 @@ namespace BOMTool.C.Services
             return secpassword;
         }
 
-        public Task<List<PartNumbDto>> GetPartNumber(string OrgCode, string partNumber)
+        public Task<List<PartNumbDto>> GetPartNumber(string OrgCode, string partNumber, bool onlyitems)
         //public Task<List<PartNumbDto>> GetPartNumber(string OrgCode, PartNumbDto partNumbDtos)
         {
             partNumber = partNumber.Replace("\n", ",");
@@ -75,6 +75,10 @@ namespace BOMTool.C.Services
                             query += " (SELECT DISTINCT inventory_item_id FROM apps.mtl_system_items WHERE segment1 in ('" + partn + "'))";
                             query += " CONNECT BY NOCYCLE PRIOR bic.component_item_id = bom.assembly_item_id ORDER BY LEVEL, bic.item_num) ";
 
+                            if (onlyitems)
+                            {
+                            query += "where child_item_type LIKE '%DIRECT ITEM%' "; 
+                            }
                             command.CommandText = query;
 
                             OracleDataAdapter adapter = new OracleDataAdapter(query, connetion);

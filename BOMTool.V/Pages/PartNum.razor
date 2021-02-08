@@ -33,6 +33,8 @@
                 Enter Part Number:
             </FieldLabel>
             <MemoEdit Placeholder="Part Number..." @bind-Text="selectedPartNum.PartNum" />
+            <Check TValue="bool" @bind-Checked="@ItemFlats">Only purchased items</Check>
+
         </Field>
 
         <Field>

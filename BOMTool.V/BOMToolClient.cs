@@ -22,7 +22,7 @@ namespace BOMTool.V
             _logger = logger;
         }
 
-        public async Task<byte[]> GetProgressFileByDTo(PartNumbDto PartNumbs)
+        public async Task<byte[]> GetProgressFileByDTo(PartNumbDto PartNumbs, bool OnlyItem)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace BOMTool.V
                 string PNDto = JsonConvert.SerializeObject(partnums);
 
                 var client = ClientFactory.CreateClient("ServerAPI");
-                var response = await client.GetAsync("/BOMTool/v1/PartNum/Export?PNDto=" + PNDto);
+                var response = await client.GetAsync("/BOMTool/v1/PartNum/Export?PNDto=" + PNDto + "&OnlyItem=" + OnlyItem);
                 response.EnsureSuccessStatusCode();
                 var bytes = await response.Content.ReadAsByteArrayAsync();
                 return bytes;

@@ -28,19 +28,21 @@ namespace BOMTool.V.Pages
 
         private PartNumbDto selectedPartNum = new PartNumbDto(); 
         private bool isLoading = false;
-               
+        private bool ItemFlats; 
+
+
         public async Task SeachPartNum(PartNumbDto partnumbers)
         {
             if (selectedPartNum.PartNum != "")
             {
                 isLoading = true;
-                stateServices.LoadPartNums(partnumbers); 
+                stateServices.LoadPartNums(partnumbers, ItemFlats); 
             }                       
         }
 
         protected async Task DownloadFile(PartNumbDto partnumbers)
         {
-           var fileBytes = await bomtoolclient.GetProgressFileByDTo(partnumbers); 
+           var fileBytes = await bomtoolclient.GetProgressFileByDTo(partnumbers, ItemFlats); 
            var fileName = $"BOMTool_{DateTime.Now.ToString()}.xlsx";
 
             await JSRuntime.InvokeAsync<object>("saveAsFile", fileName, Convert.ToBase64String(fileBytes));

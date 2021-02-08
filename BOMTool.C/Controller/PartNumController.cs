@@ -30,14 +30,14 @@ namespace BOMTool.C.Controller
 
 
         [HttpGet]
-        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracle(string PNDto)
+        public async Task<ActionResult<List<PartNumbDto>>> GetFromOracle(string PNDto, bool OnlyItem)
         {
             try
             {
                 PartNumbDto data = JsonConvert.DeserializeObject<PartNumbDto>(PNDto);
                 var partnum = data.PartNum;
                 var orgcode = data.Location;
-                var partNumbers = await _oracle.GetPartNumber(orgcode, partnum);  
+                var partNumbers = await _oracle.GetPartNumber(orgcode, partnum, OnlyItem);  
                 
                 return partNumbers;           
              }
@@ -50,14 +50,14 @@ namespace BOMTool.C.Controller
         }
 
         [HttpGet("Export")]
-        public async Task<ActionResult> GetFromOracleToExport(string PNDto)
+        public async Task<ActionResult> GetFromOracleToExport(string PNDto, bool OnlyItem)
         {
             try
             {
                 PartNumbDto data = JsonConvert.DeserializeObject<PartNumbDto>(PNDto);
                 var partnum = data.PartNum;
                 var orgcode = data.Location;
-                var partNumberstoexport = await _oracle.GetPartNumber(orgcode, partnum);               
+                var partNumberstoexport = await _oracle.GetPartNumber(orgcode, partnum, OnlyItem);               
 
                 XLWorkbook workbook = new XLWorkbook();
                 IXLWorksheet worksheet = workbook.Worksheets.Add("BOMTool");

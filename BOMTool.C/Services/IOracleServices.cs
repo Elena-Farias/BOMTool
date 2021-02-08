@@ -7,7 +7,7 @@ namespace BOMTool.C.Services
     public interface IOracleServices
     {
         //Task<List<PartNumbDto>> GetPartNumber(string OrgCode, PartNumbDto partNumbDtos);
-        Task<List<PartNumbDto>> GetPartNumber(string OrgCode, string partNumb);
+        Task<List<PartNumbDto>> GetPartNumber(string OrgCode, string partNumb, bool OnlyItems);
     }
 
 }
