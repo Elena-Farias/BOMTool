@@ -31,12 +31,12 @@
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Blazorise.Sidebar.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\lqxk1ouv0zJgST29M5Zd4glTTfQ6RWiUNb-7H9h2IKo=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\yom2c0oATd2M3QtMewOgpE_2IdfE-cXfJ9TQE_n_heA=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\BOMTool.M.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/BOMTool.M.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\aUruaofMoK4ft0t4BO8QNLoLJvvBNdd_KQKJkrpQNdc=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\sj73zz2523Nvhnn_xckw8saMgnt2z0VXefc31H6RYvw=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\BOMTool.V.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/BOMTool.V.dll.br"
     },
@@ -61,42 +61,42 @@
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Fluxor.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\CmtFEUBhCUcnfK8qtqM6B6mOJkokLg71iA3aEfaLAyY=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\enS3knCR-EnYG82RpCRTP9UNSJAMYm0vEwKzxYimeHE=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Authorization.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authorization.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\EpXsZUOVDOalD317JwzJCD2No4kKuo7EwhUswsxLDJ4=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\-rvgpjscUO4wwy5NhpGyL3PVQeewCz3L6CveroXKdQ0=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Authorization.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Authorization.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\0l73a_iYOZ-5_qlIXWL4wpzF1yCMhqbiRHJzGpj8wHo=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HJqwU_9IHCwPenA8mCg8V7Io2dPLkE90drD1_SMoN5U=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\gOmeNrJ6i6GCSuLWwNtp4cKCrcw164on_fTASunM02g=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\y2nqKvm4SZzT-B6GEs0hRADzh-t_yf1jYf0yUsnUsOM=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Forms.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\PWMAePkJIvvFVOgQxMeOlPi6d36wfbNpoDRMdgQPCIs=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\lFciztDVOFUS4Vet_bLyocsd07Lcb6d63T2Br5NQowQ=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\yaqUQL1-Zu1XyF1smwtPzhWdLkzALkO0_YIZka4H_RM=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\dg42T_Wf3Fll0bQXki1t-XypZpOzL0fDxOipiDW2hsE=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\_cFGzd0RfGDKd5AKSh_QDs4EQJr8wCqf6KSNLjmKo-o=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\4aoyHdv4zR7Aw-QqpUg52YcNvxeXkMHwNu0qgb1jLYc=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.WebAssembly.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\a7g-Uq61dqR1CgKyvxt5ve1A427WAmuH9T1GrhgOsmE=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\q-hxqH1oL98BlYGmzlXnCyZ6yYmOfRBNJ5vCksmKjYQ=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Metadata.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.br"
     },
@@ -121,67 +121,67 @@
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.EntityFrameworkCore.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\bgx8MRpsTu1hbUOy14s1In_o6xivEBQ8-SWsUHNMPrY=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\gIqTSsHTlT6aGaHRd6R_5kN-7-nZGQdzZjZ7Azs34vo=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Caching.Abstractions.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Caching.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\CER5TcpcEwebxRavgRTHEuAP1WN-3vFiDhbUTGyzlyw=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ZznB6totKeLjn-WlrWca1giF5pmLW2qIACBWnkWqn5I=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Caching.Memory.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Caching.Memory.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\7XYfBoIPFGv7EXK3c7QfboqyI2tpwm5nNEXzAYsgMNY=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\VetsjZ063IslzI7Fqz2HUghHn7r7-jEVh3UpWBcbLsU=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Abstractions.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Kq9-VXHRNYRjrGlZXd5dOMEAxxXB-RwBijlwztmOYvc=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\UlxAd0_YVWfngkjuv0fHetYQbTTgZ4LdkLmk_ZO5g6I=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Binder.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Binder.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\x-sLZE2DO4UiobdC1ewphMa9IiiHRagQck9za0nn3fE=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\bWcAU5L02Q63gZCL2lQDrpi2GQqbxnJ1eU2DN71XDPo=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\UNKOmn_RmESkhIacRsV3nE3zHYkyhjRgJs1fMef8_Io=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\yyh6dOsWSs8di-XJOe7YaMqVDVn47GcqEqIV2tLrdNE=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Json.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\boiSUYFe1WF8Zh4EYjketOliVMsfj6BETGuSaqpxrrg=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\msWfJ9BMyTCq984AOu-jobVh7uEg2thCoNw-Gmaqors=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YRXI6l5Xgjn_QzQXeRx05qR6pC-iFmzaJdk9nyV_eB8=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\AvDprr-dq1lXeGcMpT2e_o92tAQHv6SjJFQaD0y79UI=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\dvi2TMxzwE93iSV2_7RS9d8FVB_rideegEkLP73gY5Y=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\bAeSANdZYCHs9FmmbD9FygqhqGGMLupGLJe4z97A8YY=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Http.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Http.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\AZVpAm6zO7Vh2LbYZgZGs_ctzxJoV25QXiTLr2j7YIc=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\6c1-eEugGT4eQ20yjY20GBxC2y3vMSZ-vs_YTF9_4HY=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.Abstractions.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\n75P5r4Jh-l_d9LHbh62GNOV8zRM3saSDaCPP1_gC_s=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YO1mIZRf5PRjhUKTFnlG1X9DeN-Y3NthAeiCIXmXuRc=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\4nP2jYZgA7yIcmQc3IJ5RqzeGXegLmLLdaSzi_NIyCw=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\5ZDukarx2t3sQ2NZx-kbnwdQXmHppKbZIUWkBGBV4io=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Options.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\_1zeNdhuI416OpsDGcPOiKy3348cIcPTh9TclnjJZL8=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\bep0E6UYg01BRUuScPJfkmzVFSNikHSoMZza4XD7bAc=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Primitives.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.br"
     },
@@ -196,12 +196,12 @@
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\13DLYQSYDkZ2D_1ah34PHXJ-uwNft4iwTb5nqm3i2lg=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\sWQkejbOTOzNIhSBf-vCajSCG68ZHAljCyML4aZne7Q=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\Mono.Security.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Mono.Security.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YQQodoGK3hQ4XdDoBq9YF9P8X_aEDFCzVnYZN9OiNp0=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HxX9yfhOF47UsrWacgQYIS70GkpgL2srRiX6STs5Q2Y=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\mscorlib.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.br"
     },
@@ -211,92 +211,92 @@
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HP-LQhPoB9nUKtcoKijrsrX_xSGmAdCROF3NP8ScmLc=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\k7A4Ni_zCT8Icz04jWKoSSb5Bx1dkI8MoLbkXDjO46w=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Collections.Immutable.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Collections.Immutable.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\R2ftXGWqfd3VJvDOHPD8vk_uOdlvAIKBPl69gsK_ZgI=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\DBgq5xNHjeagi8xsIZ_Z5ndV6XF37powCRszBg8mTm4=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.ComponentModel.DataAnnotations.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Dc0qzdSSJYALDLNIg4PDCpJ4Z-n2TL7bPevCWv0zS0w=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\UinOYW0R8SOr1n9hqTyPaMPw16Nqumk585VRs6eQ5Wg=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Core.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Core.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\5OqZeb4ABTy1tsEQqHRxGX5C6lXUALqiWZnRg-ZCffw=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\QuLNR4DEVuNceh_HQLTJx6-6PASYKsSUI9qgrHjoRJo=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Data.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Data.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\XduuQnnd6_s2aonLKWQkZtJqAemdPganPHLJ8JW3mRc=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\0-IMVaN2KlrCWyKZlVIruswJ9UkQlfrQ-s68SklF3vs=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Diagnostics.DiagnosticSource.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Diagnostics.DiagnosticSource.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\PCrd0OaCeJMAfIEoWOvX6y5jY4voZoOrM41xu7Nk8Dk=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\D7oey8oNE7eIGR1WCWV7d5X34wKavIDESnMGUzkPe8Y=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\VMj_epbce527WcA-9fHlNDGPyKAG0QSfsMl_wCYRZLg=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Od7xNIiMSLtBuOo3M0nNtIaGsdzGIy9XTh3qNu8FnyU=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Drawing.Common.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Drawing.Common.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\TBLbW9mE7WOHm4FBU6jk_BEaEBkHKGQ40iImqjqA4-A=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\hXpVPs0urk-34mnDMTtgTf0W6-F02mGrHrTzxeAL52w=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HEybvP9MPGg7EJB3OHe-Ajq9kGsyhqC-WHoP-nkldio=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\-yDsl2QRGb4b_16dGKQFD5FtSztewQUuf7s4zUxZ4vU=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.Json.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Json.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\TZZZiTxTF1mU7dg3iET9etqCdPG_VSNdKEs5s168qkA=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\KF4uBSYU95s-3KFoRLK7P7GG-6ScsohuE0cEIf_WJGk=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.WebAssemblyHttpHandler.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HLIMpk8JFVMgI-mWFhZhQsgbhI3N9ZxQYofY6jwGYa8=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\SDgRu2rZBqdz-jTCchOojNVP6QKzWJ0VVL1htvWHbrM=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Numerics.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\QtT5NrtFX8w94BI2c2RJySxRDRK2nJF9ClsOUgy3fj4=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\25nf5_bokdFNFjxCrtpetRK0g-HB8EDd1NsZ0KcA4zc=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Runtime.CompilerServices.Unsafe.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\CumqGeJK_g_TuOkMIjgc085Sy0GtqJg5w1TPJD_jiHM=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\rCrz1cUQ3agroKHx_lh1MXGhSYXVEo7f7o8WMeUpWV4=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Runtime.Serialization.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.Serialization.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Fwp_GIi16AnPZ8v-pr6qgRc3M7dErBkOLT_FcLkF0kY=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\NLDPQF_ruzjGxpQB6_c_zIEuwX6_dRW9CFMSef4wUL4=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Encodings.Web.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ET7oVFEMdXnHe-Y1wIay9LXWGBoMfPDi36XktuveBhY=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\sgeVX3wPXf2aeDOxH6-7hIE_Hc9YtRQvmjVjBcC4GXE=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Json.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\pNSHeUtOP5Nlw2B4jDZGkUsJGZKiCGK9VyZZJ9H_D3M=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\1dgZciNicWqoiUsZNZWeWTbaR1_cCBeh6nav0ge_nuI=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Transactions.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Transactions.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\UkS_Yvg2da1WHhtm3QbrzRST61Mz49MyuozRqPK5ttw=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\qZJX4i3Ey9BOUw8Smh39XqZZK5ZtISuX13KSK5uII2s=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Xml.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\EhzuYA2cdaIbFFlIm2EYJp9bXEREIZfVbCUjyh-ZwZ4=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\GMe-22XjwaT9kaj5sU1O5RTNCACwNk2IOKyLSRQOQJ4=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Xml.Linq.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.Linq.dll.br"
     },
@@ -311,7 +311,7 @@
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Toolbelt.Blazor.LoadingBar.dll.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\cNHxLOKnLpyN5ZdWBdCwGl5iXypOdBu-4ch68MEF0Ek=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\SX0e8g2It2kbAB1zL-Fp-uq4MV4-MKJOJR0i5cQN6d0=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\linker\\WebAssembly.Bindings.dll",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Bindings.dll.br"
     },
@@ -336,7 +336,7 @@
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\dbJkMCJc0W0QY2f_8vk2uYpmN1NcCzDnyY3ns-77DDc=.hash",
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\zaqseT7bRuTa5v0dPOmA1Ut0QZjqVfEJvI1Hvr_s0Y0=.hash",
       "Source": "C:\\Code\\BOMToolVS\\BOMTool\\BOMTool.V\\obj\\Release\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

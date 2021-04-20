@@ -166,8 +166,9 @@ using Faso.Blazor.SpinKit;
 #nullable disable
             ));
             __builder.AddAttribute(2, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.Column>(3);
-                __builder2.AddAttribute(4, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
+                __builder2.AddMarkupContent(3, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.Column>(4);
+                __builder2.AddAttribute(5, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
 #nullable restore
 #line 5 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\Index.razor"
                         ColumnSize.Is12
@@ -176,9 +177,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(5, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.Heading>(6);
-                    __builder3.AddAttribute(7, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
+                __builder2.AddAttribute(6, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(7, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.Heading>(8);
+                    __builder3.AddAttribute(9, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
 #nullable restore
 #line 6 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\Index.razor"
                        HeadingSize.Is1
@@ -187,21 +189,23 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(8, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddMarkupContent(9, "\r\n            Welcome to BOM Tool !\r\n        ");
+                    __builder3.AddAttribute(10, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(11, "\r\n            Welcome to BOM Tool !\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(12, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(13, "\r\n");
             }
             ));
             __builder.CloseComponent();
-            __builder.AddMarkupContent(10, "\r\n\r\n");
-            __builder.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(11);
-            __builder.AddAttribute(12, "NotAuthorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder2) => {
-                __builder2.AddMarkupContent(13, "<p></p>");
+            __builder.AddMarkupContent(14, "\r\n\r\n");
+            __builder.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(15);
+            __builder.AddAttribute(16, "NotAuthorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder2) => {
+                __builder2.AddMarkupContent(17, "\r\n        <p></p>\r\n    ");
             }
             ));
             __builder.CloseComponent();

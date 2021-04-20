@@ -210,15 +210,19 @@ using Faso.Blazor.SpinKit;
 #nullable disable
             ));
             __builder.AddAttribute(7, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.BarBrand>(8);
-                __builder2.AddAttribute(9, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.BarItem>(10);
-                    __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.BarLink>(12);
-                        __builder4.AddAttribute(13, "To", "");
-                        __builder4.AddAttribute(14, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.OpenComponent<Blazorise.BarIcon>(15);
-                            __builder5.AddAttribute(16, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                __builder2.AddMarkupContent(8, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.BarBrand>(9);
+                __builder2.AddAttribute(10, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(11, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.BarItem>(12);
+                    __builder3.AddAttribute(13, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(14, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.BarLink>(15);
+                        __builder4.AddAttribute(16, "To", "");
+                        __builder4.AddAttribute(17, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(18, "\r\n                ");
+                            __builder5.OpenComponent<Blazorise.BarIcon>(19);
+                            __builder5.AddAttribute(20, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 10 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
                                    IconName.Home
@@ -228,32 +232,40 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                             ));
                             __builder5.CloseComponent();
-                            __builder5.AddMarkupContent(17, "\r\n                BOM TOOL\r\n            ");
+                            __builder5.AddMarkupContent(21, "\r\n                BOM TOOL\r\n            ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(22, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(23, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
-                __builder2.AddMarkupContent(18, "\r\n    ");
-                __builder2.OpenComponent<Blazorise.BarMenu>(19);
-                __builder2.AddAttribute(20, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.BarStart>(21);
-                    __builder3.AddAttribute(22, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(23);
-                        __builder4.AddAttribute(24, "Roles", "BOMTool Administrator");
-                        __builder4.AddAttribute(25, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
-                            __builder5.OpenComponent<Blazorise.BarItem>(26);
-                            __builder5.AddAttribute(27, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.OpenComponent<Blazorise.BarDropdown>(28);
-                                __builder6.AddAttribute(29, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.OpenComponent<Blazorise.BarDropdownToggle>(30);
-                                    __builder7.AddAttribute(31, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
-                                        __builder8.OpenComponent<Blazorise.BarIcon>(32);
-                                        __builder8.AddAttribute(33, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                __builder2.AddMarkupContent(24, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.BarMenu>(25);
+                __builder2.AddAttribute(26, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(27, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.BarStart>(28);
+                    __builder3.AddAttribute(29, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(30, "\r\n            ");
+                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(31);
+                        __builder4.AddAttribute(32, "Roles", "BOMTool Administrator");
+                        __builder4.AddAttribute(33, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
+                            __builder5.AddMarkupContent(34, "\r\n                ");
+                            __builder5.OpenComponent<Blazorise.BarItem>(35);
+                            __builder5.AddAttribute(36, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddMarkupContent(37, "\r\n                    ");
+                                __builder6.OpenComponent<Blazorise.BarDropdown>(38);
+                                __builder6.AddAttribute(39, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddMarkupContent(40, "\r\n                        ");
+                                    __builder7.OpenComponent<Blazorise.BarDropdownToggle>(41);
+                                    __builder7.AddAttribute(42, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
+                                        __builder8.AddMarkupContent(43, "\r\n                            ");
+                                        __builder8.OpenComponent<Blazorise.BarIcon>(44);
+                                        __builder8.AddAttribute(45, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 21 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
                                                IconName.Edit
@@ -263,20 +275,23 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                                         ));
                                         __builder8.CloseComponent();
-                                        __builder8.AddMarkupContent(34, "\r\n                            Administration\r\n                        ");
+                                        __builder8.AddMarkupContent(46, "\r\n                            Administration\r\n                        ");
                                     }
                                     ));
                                     __builder7.CloseComponent();
-                                    __builder7.AddMarkupContent(35, "\r\n                        ");
-                                    __builder7.OpenComponent<Blazorise.BarDropdownMenu>(36);
-                                    __builder7.AddAttribute(37, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
-                                        __builder8.OpenComponent<Blazorise.BarDropdownItem>(38);
-                                        __builder8.AddAttribute(39, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder9) => {
-                                            __builder9.OpenComponent<Blazorise.BarLink>(40);
-                                            __builder9.AddAttribute(41, "To", "Location");
-                                            __builder9.AddAttribute(42, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder10) => {
-                                                __builder10.OpenComponent<Blazorise.BarIcon>(43);
-                                                __builder10.AddAttribute(44, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                                    __builder7.AddMarkupContent(47, "\r\n                        ");
+                                    __builder7.OpenComponent<Blazorise.BarDropdownMenu>(48);
+                                    __builder7.AddAttribute(49, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
+                                        __builder8.AddMarkupContent(50, "\r\n                            ");
+                                        __builder8.OpenComponent<Blazorise.BarDropdownItem>(51);
+                                        __builder8.AddAttribute(52, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder9) => {
+                                            __builder9.AddMarkupContent(53, "\r\n                                ");
+                                            __builder9.OpenComponent<Blazorise.BarLink>(54);
+                                            __builder9.AddAttribute(55, "To", "Location");
+                                            __builder9.AddAttribute(56, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder10) => {
+                                                __builder10.AddMarkupContent(57, "\r\n                                    ");
+                                                __builder10.OpenComponent<Blazorise.BarIcon>(58);
+                                                __builder10.AddAttribute(59, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 27 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
                                                        IconName.Store
@@ -286,36 +301,44 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                                                 ));
                                                 __builder10.CloseComponent();
-                                                __builder10.AddMarkupContent(45, "\r\n                                    Location\r\n                                ");
+                                                __builder10.AddMarkupContent(60, "\r\n                                    Location\r\n                                ");
                                             }
                                             ));
                                             __builder9.CloseComponent();
+                                            __builder9.AddMarkupContent(61, "\r\n                            ");
                                         }
                                         ));
                                         __builder8.CloseComponent();
+                                        __builder8.AddMarkupContent(62, "\r\n                        ");
                                     }
                                     ));
                                     __builder7.CloseComponent();
+                                    __builder7.AddMarkupContent(63, "\r\n                    ");
                                 }
                                 ));
                                 __builder6.CloseComponent();
+                                __builder6.AddMarkupContent(64, "\r\n                ");
                             }
                             ));
                             __builder5.CloseComponent();
+                            __builder5.AddMarkupContent(65, "\r\n            ");
                         }
                         ));
                         __builder4.CloseComponent();
-                        __builder4.AddMarkupContent(46, "\r\n            ");
-                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(47);
-                        __builder4.AddAttribute(48, "Roles", "BOMTool User");
-                        __builder4.AddAttribute(49, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
-                            __builder5.OpenComponent<Blazorise.BarItem>(50);
-                            __builder5.AddAttribute(51, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.OpenComponent<Blazorise.BarLink>(52);
-                                __builder6.AddAttribute(53, "To", "PartNum");
-                                __builder6.AddAttribute(54, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.OpenComponent<Blazorise.BarIcon>(55);
-                                    __builder7.AddAttribute(56, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                        __builder4.AddMarkupContent(66, "\r\n            ");
+                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(67);
+                        __builder4.AddAttribute(68, "Roles", "BOMTool User");
+                        __builder4.AddAttribute(69, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
+                            __builder5.AddMarkupContent(70, "\r\n                ");
+                            __builder5.OpenComponent<Blazorise.BarItem>(71);
+                            __builder5.AddAttribute(72, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddMarkupContent(73, "\r\n                    ");
+                                __builder6.OpenComponent<Blazorise.BarLink>(74);
+                                __builder6.AddAttribute(75, "To", "PartNum");
+                                __builder6.AddAttribute(76, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddMarkupContent(77, "\r\n                        ");
+                                    __builder7.OpenComponent<Blazorise.BarIcon>(78);
+                                    __builder7.AddAttribute(79, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 38 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"
                                            IconName.Circle
@@ -325,22 +348,27 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                                     ));
                                     __builder7.CloseComponent();
-                                    __builder7.AddMarkupContent(57, "\r\n                        BOM Tool\r\n                    ");
+                                    __builder7.AddMarkupContent(80, "\r\n                        BOM Tool\r\n                    ");
                                 }
                                 ));
                                 __builder6.CloseComponent();
+                                __builder6.AddMarkupContent(81, "\r\n                ");
                             }
                             ));
                             __builder5.CloseComponent();
+                            __builder5.AddMarkupContent(82, "\r\n            ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(83, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(84, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(85, "\r\n");
             }
             ));
             __builder.CloseComponent();
@@ -354,7 +382,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
         (__builder2) => {
-            __builder2.AddMarkupContent(58, "<img src=\"/brand-logo.png\" style=\"width:100px; height: 42px\">");
+            __builder2.AddMarkupContent(86, "<img src=\"/brand-logo.png\" style=\"width:100px; height: 42px\">");
         }
 #nullable restore
 #line 47 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\NavMenu.razor"

@@ -179,6 +179,7 @@ using Faso.Blazor.SpinKit;
 #nullable disable
             ));
             __builder.AddAttribute(6, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
+                __builder2.AddMarkupContent(7, "\r\n");
 #nullable restore
 #line 10 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
      if (!PartNumState.Value.IsLoading && !(LocationState.Value.Currents == null))
@@ -189,8 +190,9 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-                __builder2.OpenComponent<Blazorise.Field>(7);
-                __builder2.AddAttribute(8, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
+                __builder2.AddContent(8, "        ");
+                __builder2.OpenComponent<Blazorise.Field>(9);
+                __builder2.AddAttribute(10, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
 #nullable restore
 #line 14 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                            ColumnSize.Is3
@@ -199,18 +201,20 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(9, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.FieldLabel>(10);
-                    __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddMarkupContent(12, "\r\n                Select Location:\r\n            ");
+                __builder2.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(12, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.FieldLabel>(13);
+                    __builder3.AddAttribute(14, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(15, "\r\n                Select Location:\r\n            ");
                     }
                     ));
                     __builder3.CloseComponent();
-                    __builder3.AddMarkupContent(13, "\r\n            ");
-                    __builder3.OpenComponent<Blazorise.FieldBody>(14);
-                    __builder3.AddAttribute(15, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.Select<string>>(16);
-                        __builder4.AddAttribute(17, "SelectedValue", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
+                    __builder3.AddMarkupContent(16, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.FieldBody>(17);
+                    __builder3.AddAttribute(18, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(19, "\r\n                ");
+                        __builder4.OpenComponent<Blazorise.Select<string>>(20);
+                        __builder4.AddAttribute(21, "SelectedValue", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<string>(
 #nullable restore
 #line 19 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                              selectedPartNum.Location
@@ -219,10 +223,11 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(18, "SelectedValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => selectedPartNum.Location = __value, selectedPartNum.Location))));
-                        __builder4.AddAttribute(19, "SelectedValueExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(() => selectedPartNum.Location));
-                        __builder4.AddAttribute(20, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __Blazor.BOMTool.V.Pages.PartNum.TypeInference.CreateSelectItem_0(__builder5, 21, 22, 
+                        __builder4.AddAttribute(22, "SelectedValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<string>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<string>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => selectedPartNum.Location = __value, selectedPartNum.Location))));
+                        __builder4.AddAttribute(23, "SelectedValueExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<string>>>(() => selectedPartNum.Location));
+                        __builder4.AddAttribute(24, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(25, "\r\n                    ");
+                            __Blazor.BOMTool.V.Pages.PartNum.TypeInference.CreateSelectItem_0(__builder5, 26, 27, 
 #nullable restore
 #line 20 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                        -1
@@ -230,10 +235,11 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-                            , 23, (__builder6) => {
-                                __builder6.AddMarkupContent(24, "\r\n                        Select Locacion\r\n                    ");
+                            , 28, (__builder6) => {
+                                __builder6.AddMarkupContent(29, "\r\n                        Select Locacion\r\n                    ");
                             }
                             );
+                            __builder5.AddMarkupContent(30, "\r\n");
 #nullable restore
 #line 23 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                      foreach (var locs in locations)
@@ -242,7 +248,8 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-                            __Blazor.BOMTool.V.Pages.PartNum.TypeInference.CreateSelectItem_1(__builder5, 25, 26, 
+                            __builder5.AddContent(31, "                        ");
+                            __Blazor.BOMTool.V.Pages.PartNum.TypeInference.CreateSelectItem_1(__builder5, 32, 33, 
 #nullable restore
 #line 25 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                             locs.Code
@@ -250,8 +257,8 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-                            , 27, (__builder6) => {
-                                __builder6.AddContent(28, 
+                            , 34, (__builder6) => {
+                                __builder6.AddContent(35, 
 #nullable restore
 #line 25 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                         locs.Name
@@ -262,6 +269,7 @@ using Faso.Blazor.SpinKit;
                                 );
                             }
                             );
+                            __builder5.AddMarkupContent(36, "\r\n");
 #nullable restore
 #line 26 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                     }
@@ -269,17 +277,22 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
+                            __builder5.AddContent(37, "                ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(38, "\r\n            ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(39, "\r\n        ");
                 }
                 ));
                 __builder2.CloseComponent();
-                __builder2.OpenComponent<Blazorise.Field>(29);
-                __builder2.AddAttribute(30, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
+                __builder2.AddMarkupContent(40, "\r\n");
+                __builder2.AddContent(41, "        ");
+                __builder2.OpenComponent<Blazorise.Field>(42);
+                __builder2.AddAttribute(43, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
 #nullable restore
 #line 31 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                            ColumnSize.Is3
@@ -288,17 +301,18 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(31, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.FieldLabel>(32);
-                    __builder3.AddAttribute(33, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddMarkupContent(34, "\r\n                Enter Part Number:\r\n            ");
+                __builder2.AddAttribute(44, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(45, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.FieldLabel>(46);
+                    __builder3.AddAttribute(47, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(48, "\r\n                Enter Part Number:\r\n            ");
                     }
                     ));
                     __builder3.CloseComponent();
-                    __builder3.AddMarkupContent(35, "\r\n            ");
-                    __builder3.OpenComponent<Blazorise.MemoEdit>(36);
-                    __builder3.AddAttribute(37, "Placeholder", "Part Number...");
-                    __builder3.AddAttribute(38, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddMarkupContent(49, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.MemoEdit>(50);
+                    __builder3.AddAttribute(51, "Placeholder", "Part Number...");
+                    __builder3.AddAttribute(52, "Text", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 35 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                                selectedPartNum.PartNum
@@ -307,12 +321,12 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(39, "TextChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.String>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.String>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => selectedPartNum.PartNum = __value, selectedPartNum.PartNum))));
-                    __builder3.AddAttribute(40, "TextExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(() => selectedPartNum.PartNum));
+                    __builder3.AddAttribute(53, "TextChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.String>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.String>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => selectedPartNum.PartNum = __value, selectedPartNum.PartNum))));
+                    __builder3.AddAttribute(54, "TextExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(() => selectedPartNum.PartNum));
                     __builder3.CloseComponent();
-                    __builder3.AddMarkupContent(41, "\r\n            ");
-                    __builder3.OpenComponent<Blazorise.Check<bool>>(42);
-                    __builder3.AddAttribute(43, "Checked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<bool>(
+                    __builder3.AddMarkupContent(55, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.Check<bool>>(56);
+                    __builder3.AddAttribute(57, "Checked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<bool>(
 #nullable restore
 #line 36 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                  ItemFlats
@@ -321,22 +335,27 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(44, "CheckedChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<bool>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<bool>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => ItemFlats = __value, ItemFlats))));
-                    __builder3.AddAttribute(45, "CheckedExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<bool>>>(() => ItemFlats));
-                    __builder3.AddAttribute(46, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(47, "Only purchased items");
+                    __builder3.AddAttribute(58, "CheckedChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<bool>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<bool>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => ItemFlats = __value, ItemFlats))));
+                    __builder3.AddAttribute(59, "CheckedExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<bool>>>(() => ItemFlats));
+                    __builder3.AddAttribute(60, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(61, "Only purchased items");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(62, "\r\n\r\n        ");
                 }
                 ));
                 __builder2.CloseComponent();
-                __builder2.OpenComponent<Blazorise.Field>(48);
-                __builder2.AddAttribute(49, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.FieldBody>(50);
-                    __builder3.AddAttribute(51, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.Button>(52);
-                        __builder4.AddAttribute(53, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Color>(
+                __builder2.AddMarkupContent(63, "\r\n");
+                __builder2.AddContent(64, "        ");
+                __builder2.OpenComponent<Blazorise.Field>(65);
+                __builder2.AddAttribute(66, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(67, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.FieldBody>(68);
+                    __builder3.AddAttribute(69, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(70, "\r\n                ");
+                        __builder4.OpenComponent<Blazorise.Button>(71);
+                        __builder4.AddAttribute(72, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Color>(
 #nullable restore
 #line 42 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                Color.Primary
@@ -345,7 +364,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(54, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
+                        __builder4.AddAttribute(73, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
 #nullable restore
 #line 43 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                    () => SeachPartNum(selectedPartNum)
@@ -354,9 +373,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         )));
-                        __builder4.AddAttribute(55, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.OpenComponent<Blazorise.Icon>(56);
-                            __builder5.AddAttribute(57, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                        __builder4.AddAttribute(74, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(75, "\r\n                    ");
+                            __builder5.OpenComponent<Blazorise.Icon>(76);
+                            __builder5.AddAttribute(77, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 44 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                 IconName.Search
@@ -366,22 +386,28 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                             ));
                             __builder5.CloseComponent();
-                            __builder5.AddMarkupContent(58, "\r\n                    Search\r\n                ");
+                            __builder5.AddMarkupContent(78, "\r\n                    Search\r\n                ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(79, "\r\n            ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(80, "\r\n        ");
                 }
                 ));
                 __builder2.CloseComponent();
-                __builder2.OpenComponent<Blazorise.Field>(59);
-                __builder2.AddAttribute(60, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.FieldBody>(61);
-                    __builder3.AddAttribute(62, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.Button>(63);
-                        __builder4.AddAttribute(64, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Color>(
+                __builder2.AddMarkupContent(81, "\r\n");
+                __builder2.AddContent(82, "        ");
+                __builder2.OpenComponent<Blazorise.Field>(83);
+                __builder2.AddAttribute(84, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(85, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.FieldBody>(86);
+                    __builder3.AddAttribute(87, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(88, "\r\n                ");
+                        __builder4.OpenComponent<Blazorise.Button>(89);
+                        __builder4.AddAttribute(90, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Color>(
 #nullable restore
 #line 52 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                Color.Success
@@ -390,7 +416,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(65, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
+                        __builder4.AddAttribute(91, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
 #nullable restore
 #line 53 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                    () => DownloadFile(selectedPartNum)
@@ -399,9 +425,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         )));
-                        __builder4.AddAttribute(66, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.OpenComponent<Blazorise.Icon>(67);
-                            __builder5.AddAttribute(68, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                        __builder4.AddAttribute(92, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(93, "\r\n                    ");
+                            __builder5.OpenComponent<Blazorise.Icon>(94);
+                            __builder5.AddAttribute(95, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 54 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                 IconName.FileDownload
@@ -411,22 +438,28 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                             ));
                             __builder5.CloseComponent();
-                            __builder5.AddMarkupContent(69, "\r\n                    Export to Excel\r\n                ");
+                            __builder5.AddMarkupContent(96, "\r\n                    Export to Excel\r\n                ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(97, "\r\n            ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(98, "\r\n        ");
                 }
                 ));
                 __builder2.CloseComponent();
-                __builder2.OpenComponent<Blazorise.Field>(70);
-                __builder2.AddAttribute(71, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.FieldBody>(72);
-                    __builder3.AddAttribute(73, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.Button>(74);
-                        __builder4.AddAttribute(75, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Color>(
+                __builder2.AddMarkupContent(99, "\r\n");
+                __builder2.AddContent(100, "        ");
+                __builder2.OpenComponent<Blazorise.Field>(101);
+                __builder2.AddAttribute(102, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(103, "\r\n            ");
+                    __builder3.OpenComponent<Blazorise.FieldBody>(104);
+                    __builder3.AddAttribute(105, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(106, "\r\n                ");
+                        __builder4.OpenComponent<Blazorise.Button>(107);
+                        __builder4.AddAttribute(108, "Color", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Color>(
 #nullable restore
 #line 62 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                Color.Light
@@ -435,7 +468,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(76, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
+                        __builder4.AddAttribute(109, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
 #nullable restore
 #line 63 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                   clearfields
@@ -444,9 +477,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         )));
-                        __builder4.AddAttribute(77, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.OpenComponent<Blazorise.Icon>(78);
-                            __builder5.AddAttribute(79, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                        __builder4.AddAttribute(110, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(111, "\r\n                    ");
+                            __builder5.OpenComponent<Blazorise.Icon>(112);
+                            __builder5.AddAttribute(113, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 64 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                 IconName.Clear
@@ -456,16 +490,19 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                             ));
                             __builder5.CloseComponent();
-                            __builder5.AddMarkupContent(80, "\r\n                    Reset PartNum\r\n                ");
+                            __builder5.AddMarkupContent(114, "\r\n                    Reset PartNum\r\n                ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(115, "\r\n            ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(116, "\r\n        ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(117, "\r\n");
 #nullable restore
 #line 69 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
     }
@@ -473,16 +510,19 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
+                __builder2.AddMarkupContent(118, "\r\n");
             }
             ));
             __builder.CloseComponent();
-            __builder.AddMarkupContent(81, "\r\n");
-            __builder.OpenComponent<Blazorise.Row>(82);
-            __builder.AddAttribute(83, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.Column>(84);
-                __builder2.AddAttribute(85, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.DataGrid.DataGrid<PartNumbDto>>(86);
-                    __builder3.AddAttribute(87, "Data", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Collections.Generic.IEnumerable<PartNumbDto>>(
+            __builder.AddMarkupContent(119, "\r\n");
+            __builder.OpenComponent<Blazorise.Row>(120);
+            __builder.AddAttribute(121, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
+                __builder2.AddMarkupContent(122, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.Column>(123);
+                __builder2.AddAttribute(124, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(125, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.DataGrid.DataGrid<PartNumbDto>>(126);
+                    __builder3.AddAttribute(127, "Data", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Collections.Generic.IEnumerable<PartNumbDto>>(
 #nullable restore
 #line 75 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                          PartNumState.Value.Currents
@@ -491,7 +531,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(88, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(128, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 76 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                             true
@@ -500,7 +540,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(89, "ShowPager", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                    __builder3.AddAttribute(129, "ShowPager", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 77 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                              true
@@ -509,7 +549,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(90, "PageSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
+                    __builder3.AddAttribute(130, "PageSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Int32>(
 #nullable restore
 #line 78 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                             300
@@ -518,9 +558,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(91, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(92);
-                        __builder4.AddAttribute(93, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                    __builder3.AddAttribute(131, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(132, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(133);
+                        __builder4.AddAttribute(134, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 79 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                         nameof(PartNumbDto.Model)
@@ -529,8 +570,8 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(94, "Caption", "Model");
-                        __builder4.AddAttribute(95, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(135, "Caption", "Model");
+                        __builder4.AddAttribute(136, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 79 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                                                                              true
@@ -540,9 +581,9 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                         ));
                         __builder4.CloseComponent();
-                        __builder4.AddMarkupContent(96, "\r\n            ");
-                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(97);
-                        __builder4.AddAttribute(98, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddMarkupContent(137, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(138);
+                        __builder4.AddAttribute(139, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 80 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                         nameof(PartNumbDto.PartNum)
@@ -551,8 +592,8 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(99, "Caption", "Part Number");
-                        __builder4.AddAttribute(100, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(140, "Caption", "Part Number");
+                        __builder4.AddAttribute(141, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 80 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                                                                                      true
@@ -562,9 +603,9 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                         ));
                         __builder4.CloseComponent();
-                        __builder4.AddMarkupContent(101, "\r\n            ");
-                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(102);
-                        __builder4.AddAttribute(103, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddMarkupContent(142, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(143);
+                        __builder4.AddAttribute(144, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 81 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                         nameof(PartNumbDto.ItemDescription)
@@ -573,8 +614,8 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(104, "Caption", "Description");
-                        __builder4.AddAttribute(105, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(145, "Caption", "Description");
+                        __builder4.AddAttribute(146, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 81 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                                                                                              true
@@ -584,9 +625,9 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                         ));
                         __builder4.CloseComponent();
-                        __builder4.AddMarkupContent(106, "\r\n            ");
-                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(107);
-                        __builder4.AddAttribute(108, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddMarkupContent(147, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(148);
+                        __builder4.AddAttribute(149, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 82 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                         nameof(PartNumbDto.UOM)
@@ -595,8 +636,8 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(109, "Caption", "UOM");
-                        __builder4.AddAttribute(110, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(150, "Caption", "UOM");
+                        __builder4.AddAttribute(151, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 82 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                                                                          true
@@ -606,9 +647,9 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                         ));
                         __builder4.CloseComponent();
-                        __builder4.AddMarkupContent(111, "\r\n            ");
-                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(112);
-                        __builder4.AddAttribute(113, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddMarkupContent(152, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(153);
+                        __builder4.AddAttribute(154, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 83 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                         nameof(PartNumbDto.QTY)
@@ -617,8 +658,8 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(114, "Caption", "QTY");
-                        __builder4.AddAttribute(115, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(155, "Caption", "QTY");
+                        __builder4.AddAttribute(156, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 83 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                                                                          true
@@ -628,9 +669,9 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                         ));
                         __builder4.CloseComponent();
-                        __builder4.AddMarkupContent(116, "\r\n            ");
-                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(117);
-                        __builder4.AddAttribute(118, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                        __builder4.AddMarkupContent(157, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.DataGrid.DataGridColumn<PartNumbDto>>(158);
+                        __builder4.AddAttribute(159, "Field", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 84 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                         nameof(PartNumbDto.ItemType)
@@ -639,8 +680,8 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(119, "Caption", "Item Type");
-                        __builder4.AddAttribute(120, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                        __builder4.AddAttribute(160, "Caption", "Item Type");
+                        __builder4.AddAttribute(161, "Sortable", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 84 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
                                                                                                                     true
@@ -650,15 +691,19 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(162, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(163, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(164, "\r\n");
             }
             ));
             __builder.CloseComponent();
+            __builder.AddMarkupContent(165, "\r\n\r\n");
 #nullable restore
 #line 89 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
  if (PartNumState.Value.IsLoading)
@@ -667,8 +712,10 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-            __builder.OpenComponent<Faso.Blazor.SpinKit.SpinKitThreeBounce>(121);
+            __builder.AddContent(166, "    ");
+            __builder.OpenComponent<Faso.Blazor.SpinKit.SpinKitThreeBounce>(167);
             __builder.CloseComponent();
+            __builder.AddMarkupContent(168, " \r\n");
 #nullable restore
 #line 92 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\PartNum.razor"
  }

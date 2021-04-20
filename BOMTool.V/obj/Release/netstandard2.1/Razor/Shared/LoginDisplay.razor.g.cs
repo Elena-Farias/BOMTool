@@ -191,17 +191,22 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #nullable disable
             ));
             __builder.AddAttribute(5, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.BarMenu>(6);
-                __builder2.AddAttribute(7, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.BarStart>(8);
-                    __builder3.AddAttribute(9, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.BarItem>(10);
-                        __builder4.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.OpenComponent<Blazorise.BarLink>(12);
-                            __builder5.AddAttribute(13, "To", "/");
-                            __builder5.AddAttribute(14, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.OpenComponent<Blazorise.Heading>(15);
-                                __builder6.AddAttribute(16, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
+                __builder2.AddMarkupContent(6, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.BarMenu>(7);
+                __builder2.AddAttribute(8, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(9, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.BarStart>(10);
+                    __builder3.AddAttribute(11, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(12, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.BarItem>(13);
+                        __builder4.AddAttribute(14, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(15, "\r\n                ");
+                            __builder5.OpenComponent<Blazorise.BarLink>(16);
+                            __builder5.AddAttribute(17, "To", "/");
+                            __builder5.AddAttribute(18, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddMarkupContent(19, "\r\n                    ");
+                                __builder6.OpenComponent<Blazorise.Heading>(20);
+                                __builder6.AddAttribute(21, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
 #nullable restore
 #line 12 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
                                    HeadingSize.Is2
@@ -210,33 +215,40 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #line hidden
 #nullable disable
                                 ));
-                                __builder6.AddAttribute(17, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.AddMarkupContent(18, "\r\n                        BOM Tool\r\n                    ");
+                                __builder6.AddAttribute(22, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddMarkupContent(23, "\r\n                        BOM Tool\r\n                    ");
                                 }
                                 ));
                                 __builder6.CloseComponent();
+                                __builder6.AddMarkupContent(24, "\r\n                ");
                             }
                             ));
                             __builder5.CloseComponent();
+                            __builder5.AddMarkupContent(25, "\r\n            ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(26, "    \r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
-                    __builder3.AddMarkupContent(19, "\r\n        ");
-                    __builder3.OpenComponent<Blazorise.BarEnd>(20);
-                    __builder3.AddAttribute(21, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(22);
-                        __builder4.AddAttribute(23, "Authorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
-                            __builder5.OpenComponent<Blazorise.BarItem>(24);
-                            __builder5.AddAttribute(25, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.OpenComponent<Blazorise.BarDropdown>(26);
-                                __builder6.AddAttribute(27, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.OpenComponent<Blazorise.BarDropdownToggle>(28);
-                                    __builder7.AddAttribute(29, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
-                                        __builder8.OpenComponent<Blazorise.Icon>(30);
-                                        __builder8.AddAttribute(31, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                    __builder3.AddMarkupContent(27, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.BarEnd>(28);
+                    __builder3.AddAttribute(29, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(30, "\r\n            ");
+                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeView>(31);
+                        __builder4.AddAttribute(32, "Authorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
+                            __builder5.AddMarkupContent(33, "\r\n                    ");
+                            __builder5.OpenComponent<Blazorise.BarItem>(34);
+                            __builder5.AddAttribute(35, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddMarkupContent(36, "\r\n                        ");
+                                __builder6.OpenComponent<Blazorise.BarDropdown>(37);
+                                __builder6.AddAttribute(38, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddMarkupContent(39, "\r\n                            ");
+                                    __builder7.OpenComponent<Blazorise.BarDropdownToggle>(40);
+                                    __builder7.AddAttribute(41, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
+                                        __builder8.OpenComponent<Blazorise.Icon>(42);
+                                        __builder8.AddAttribute(43, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 23 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
                                                            IconName.User
@@ -246,8 +258,8 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #nullable disable
                                         ));
                                         __builder8.CloseComponent();
-                                        __builder8.AddContent(32, " ");
-                                        __builder8.AddContent(33, 
+                                        __builder8.AddContent(44, " ");
+                                        __builder8.AddContent(45, 
 #nullable restore
 #line 23 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
                                                                               context.User.Identity.Name
@@ -259,10 +271,10 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
                                     }
                                     ));
                                     __builder7.CloseComponent();
-                                    __builder7.AddMarkupContent(34, "\r\n                            ");
-                                    __builder7.OpenComponent<Blazorise.BarDropdownMenu>(35);
-                                    __builder7.AddAttribute(36, "Style", "padding: 15px;");
-                                    __builder7.AddAttribute(37, "RightAligned", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
+                                    __builder7.AddMarkupContent(46, "\r\n                            ");
+                                    __builder7.OpenComponent<Blazorise.BarDropdownMenu>(47);
+                                    __builder7.AddAttribute(48, "Style", "padding: 15px;");
+                                    __builder7.AddAttribute(49, "RightAligned", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 24 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
                                                                                   true
@@ -271,11 +283,13 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #line hidden
 #nullable disable
                                     ));
-                                    __builder7.AddAttribute(38, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
-                                        __builder8.OpenComponent<Blazorise.BarDropdownItem>(39);
-                                        __builder8.AddAttribute(40, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder9) => {
-                                            __builder9.OpenComponent<Blazorise.Button>(41);
-                                            __builder9.AddAttribute(42, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
+                                    __builder7.AddAttribute(50, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder8) => {
+                                        __builder8.AddMarkupContent(51, "\r\n                                ");
+                                        __builder8.OpenComponent<Blazorise.BarDropdownItem>(52);
+                                        __builder8.AddAttribute(53, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder9) => {
+                                            __builder9.AddMarkupContent(54, "\r\n                                    ");
+                                            __builder9.OpenComponent<Blazorise.Button>(55);
+                                            __builder9.AddAttribute(56, "Clicked", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create(this, 
 #nullable restore
 #line 26 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
                                                       BeginSignOut
@@ -284,33 +298,41 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #line hidden
 #nullable disable
                                             )));
-                                            __builder9.AddAttribute(43, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder10) => {
-                                                __builder10.AddContent(44, "Sign out");
+                                            __builder9.AddAttribute(57, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder10) => {
+                                                __builder10.AddContent(58, "Sign out");
                                             }
                                             ));
                                             __builder9.CloseComponent();
+                                            __builder9.AddMarkupContent(59, "\r\n                                ");
                                         }
                                         ));
                                         __builder8.CloseComponent();
+                                        __builder8.AddMarkupContent(60, "\r\n                            ");
                                     }
                                     ));
                                     __builder7.CloseComponent();
+                                    __builder7.AddMarkupContent(61, "\r\n                        ");
                                 }
                                 ));
                                 __builder6.CloseComponent();
+                                __builder6.AddMarkupContent(62, "\r\n                    ");
                             }
                             ));
                             __builder5.CloseComponent();
+                            __builder5.AddMarkupContent(63, "\r\n                ");
                         }
                         ));
-                        __builder4.AddAttribute(45, "NotAuthorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
-                            __builder5.OpenComponent<Blazorise.BarItem>(46);
-                            __builder5.AddAttribute(47, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.OpenComponent<Blazorise.BarLink>(48);
-                                __builder6.AddAttribute(49, "To", "authentication/login");
-                                __builder6.AddAttribute(50, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
-                                    __builder7.OpenComponent<Blazorise.BarIcon>(51);
-                                    __builder7.AddAttribute(52, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                        __builder4.AddAttribute(64, "NotAuthorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
+                            __builder5.AddMarkupContent(65, "\r\n                    ");
+                            __builder5.OpenComponent<Blazorise.BarItem>(66);
+                            __builder5.AddAttribute(67, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddMarkupContent(68, "\r\n                        ");
+                                __builder6.OpenComponent<Blazorise.BarLink>(69);
+                                __builder6.AddAttribute(70, "To", "authentication/login");
+                                __builder6.AddAttribute(71, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder7) => {
+                                    __builder7.AddMarkupContent(72, "\r\n                            ");
+                                    __builder7.OpenComponent<Blazorise.BarIcon>(73);
+                                    __builder7.AddAttribute(74, "IconName", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 35 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\LoginDisplay.razor"
                                                Blazorise.Icons.FontAwesome.FontAwesomeIcons.SignInAlt
@@ -320,22 +342,27 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 #nullable disable
                                     ));
                                     __builder7.CloseComponent();
-                                    __builder7.AddMarkupContent(53, " Sign in\r\n                        ");
+                                    __builder7.AddMarkupContent(75, " Sign in\r\n                        ");
                                 }
                                 ));
                                 __builder6.CloseComponent();
+                                __builder6.AddMarkupContent(76, "\r\n                    ");
                             }
                             ));
                             __builder5.CloseComponent();
+                            __builder5.AddMarkupContent(77, "\r\n                ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(78, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(79, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(80, "\r\n");
             }
             ));
             __builder.CloseComponent();

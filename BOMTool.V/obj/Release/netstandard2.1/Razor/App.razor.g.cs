@@ -159,8 +159,9 @@ using Faso.Blazor.SpinKit;
             __builder.AddMarkupContent(1, "\r\n");
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState>(2);
             __builder.AddAttribute(3, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.ThemeProvider>(4);
-                __builder2.AddAttribute(5, "Theme", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Theme>(
+                __builder2.AddMarkupContent(4, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.ThemeProvider>(5);
+                __builder2.AddAttribute(6, "Theme", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.Theme>(
 #nullable restore
 #line 3 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                                      theme
@@ -169,9 +170,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(6, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Microsoft.AspNetCore.Components.Routing.Router>(7);
-                    __builder3.AddAttribute(8, "AppAssembly", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Reflection.Assembly>(
+                __builder2.AddAttribute(7, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(8, "\r\n        ");
+                    __builder3.OpenComponent<Microsoft.AspNetCore.Components.Routing.Router>(9);
+                    __builder3.AddAttribute(10, "AppAssembly", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Reflection.Assembly>(
 #nullable restore
 #line 4 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                               typeof(Program).Assembly
@@ -180,9 +182,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(9, "Found", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>)((routeData) => (__builder4) => {
-                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView>(10);
-                        __builder4.AddAttribute(11, "RouteData", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.RouteData>(
+                    __builder3.AddAttribute(11, "Found", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>)((routeData) => (__builder4) => {
+                        __builder4.AddMarkupContent(12, "\r\n                ");
+                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView>(13);
+                        __builder4.AddAttribute(14, "RouteData", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.RouteData>(
 #nullable restore
 #line 6 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                                                 routeData
@@ -191,7 +194,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(12, "DefaultLayout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
+                        __builder4.AddAttribute(15, "DefaultLayout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
 #nullable restore
 #line 6 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                                                                            typeof(MainLayout)
@@ -200,7 +203,8 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(13, "NotAuthorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
+                        __builder4.AddAttribute(16, "NotAuthorized", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)((context) => (__builder5) => {
+                            __builder5.AddMarkupContent(17, "\r\n");
 #nullable restore
 #line 8 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                          if (!context.User.Identity.IsAuthenticated)
@@ -209,8 +213,10 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-                            __builder5.OpenComponent<BOMTool.V.Shared.RedirectToLogin>(14);
+                            __builder5.AddContent(18, "                            ");
+                            __builder5.OpenComponent<BOMTool.V.Shared.RedirectToLogin>(19);
                             __builder5.CloseComponent();
+                            __builder5.AddMarkupContent(20, "\r\n");
 #nullable restore
 #line 11 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                         }
@@ -220,7 +226,8 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-                            __builder5.AddMarkupContent(15, "<p>You are not authorized to access this resource.</p>");
+                            __builder5.AddContent(21, "                            ");
+                            __builder5.AddMarkupContent(22, "<p>You are not authorized to access this resource.</p>\r\n");
 #nullable restore
 #line 15 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                         }
@@ -228,14 +235,17 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
+                            __builder5.AddContent(23, "                    ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(24, "\r\n            ");
                     }
                     ));
-                    __builder3.AddAttribute(16, "NotFound", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.LayoutView>(17);
-                        __builder4.AddAttribute(18, "Layout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
+                    __builder3.AddAttribute(25, "NotFound", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(26, "\r\n                ");
+                        __builder4.OpenComponent<Microsoft.AspNetCore.Components.LayoutView>(27);
+                        __builder4.AddAttribute(28, "Layout", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Type>(
 #nullable restore
 #line 20 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\App.razor"
                                      typeof(MainLayout)
@@ -244,17 +254,21 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.AddMarkupContent(20, "<p>Sorry, there\'s nothing at this address.</p>");
+                        __builder4.AddAttribute(29, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(30, "\r\n                    ");
+                            __builder5.AddMarkupContent(31, "<p>Sorry, there\'s nothing at this address.</p>\r\n                ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(32, "\r\n            ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(33, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(34, "\r\n");
             }
             ));
             __builder.CloseComponent();

@@ -31,14 +31,14 @@ namespace BOMTool.V.Store.Features.PartNums.Effects
             try
             {
                 _logger.LogInformation("Loading Locations...");
-                var client = _clientFactory.CreateClient("ServerAPI");
+               var client = _clientFactory.CreateClient("ServerAPI");
 
                 bool OnlyItems = action.OnlyItem;
 
                 PartNumbDto partnums = action.PartNumbs;
                 string PNDto = JsonConvert.SerializeObject(partnums);
                 
-                var ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>("/BOMTool/v1/PartNum/?PNDto=" + PNDto + "&OnlyItem=" + OnlyItems);
+                var ResponseData = await client.GetFromJsonAsync<List<PartNumbDto>>("/bomtool_api/v1/PartNum/?PNDto=" + PNDto + "&OnlyItem=" + OnlyItems);
                 _logger.LogInformation("Locations loaded successfully!");
                 dispatcher.Dispatch(new LoadPartNumsSuccessAction(ResponseData));
                              

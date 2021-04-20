@@ -165,8 +165,9 @@ using Faso.Blazor.SpinKit;
 #nullable disable
             ));
             __builder.AddAttribute(2, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.Column>(3);
-                __builder2.AddAttribute(4, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
+                __builder2.AddMarkupContent(3, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.Column>(4);
+                __builder2.AddAttribute(5, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
 #nullable restore
 #line 2 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
                         ColumnSize.Is8
@@ -175,9 +176,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(5, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.Heading>(6);
-                    __builder3.AddAttribute(7, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
+                __builder2.AddAttribute(6, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(7, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.Heading>(8);
+                    __builder3.AddAttribute(9, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
 #nullable restore
 #line 3 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
                        HeadingSize.Is4
@@ -186,9 +188,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(8, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.Icon>(9);
-                        __builder4.AddAttribute(10, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+                    __builder3.AddAttribute(10, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(11, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.Icon>(12);
+                        __builder4.AddAttribute(13, "Name", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 4 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
                          Icon
@@ -198,8 +201,8 @@ using Faso.Blazor.SpinKit;
 #nullable disable
                         ));
                         __builder4.CloseComponent();
-                        __builder4.AddMarkupContent(11, "\r\n            ");
-                        __builder4.AddContent(12, 
+                        __builder4.AddMarkupContent(14, "\r\n            ");
+                        __builder4.AddContent(15, 
 #nullable restore
 #line 5 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
              Text
@@ -208,6 +211,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         );
+                        __builder4.AddMarkupContent(16, "\r\n");
 #nullable restore
 #line 6 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
              if (IsLoading)
@@ -216,7 +220,7 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
-                        __builder4.AddMarkupContent(13, "<i class=\"fas fa-spin fa-spinner\" style=\"margin-left: 10px;\"></i>");
+                        __builder4.AddMarkupContent(17, "                <i class=\"fas fa-spin fa-spinner\" style=\"margin-left: 10px;\"></i>\r\n");
 #nullable restore
 #line 9 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
             }
@@ -224,15 +228,17 @@ using Faso.Blazor.SpinKit;
 #line default
 #line hidden
 #nullable disable
+                        __builder4.AddContent(18, "        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(19, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
-                __builder2.AddMarkupContent(14, "\r\n    ");
-                __builder2.OpenComponent<Blazorise.Column>(15);
-                __builder2.AddAttribute(16, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
+                __builder2.AddMarkupContent(20, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.Column>(21);
+                __builder2.AddAttribute(22, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
 #nullable restore
 #line 12 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
                         ColumnSize.Is4
@@ -241,7 +247,7 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(17, "Display", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentDisplay>(
+                __builder2.AddAttribute(23, "Display", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentDisplay>(
 #nullable restore
 #line 13 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
                      Display.Inline
@@ -250,10 +256,12 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(18, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.Container>(19);
-                    __builder3.AddAttribute(20, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(21, 
+                __builder2.AddAttribute(24, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(25, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.Container>(26);
+                    __builder3.AddAttribute(27, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(28, "\r\n            ");
+                        __builder4.AddContent(29, 
 #nullable restore
 #line 15 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Components\PageTitle.razor"
              ChildContent
@@ -262,12 +270,15 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                         );
+                        __builder4.AddMarkupContent(30, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(31, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(32, "\r\n");
             }
             ));
             __builder.CloseComponent();

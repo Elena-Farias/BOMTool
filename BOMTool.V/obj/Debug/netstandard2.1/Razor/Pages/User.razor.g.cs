@@ -157,8 +157,9 @@ using Faso.Blazor.SpinKit;
         {
             __builder.OpenComponent<Blazorise.Row>(0);
             __builder.AddAttribute(1, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.Column>(2);
-                __builder2.AddAttribute(3, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
+                __builder2.AddMarkupContent(2, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.Column>(3);
+                __builder2.AddAttribute(4, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
 #nullable restore
 #line 4 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\User.razor"
                         ColumnSize.Is12
@@ -167,9 +168,10 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(4, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.Heading>(5);
-                    __builder3.AddAttribute(6, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
+                __builder2.AddAttribute(5, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(6, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.Heading>(7);
+                    __builder3.AddAttribute(8, "Size", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.HeadingSize>(
 #nullable restore
 #line 5 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Pages\User.razor"
                        HeadingSize.Is4
@@ -178,14 +180,16 @@ using Faso.Blazor.SpinKit;
 #line hidden
 #nullable disable
                     ));
-                    __builder3.AddAttribute(7, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.AddContent(8, "User Catalog");
+                    __builder3.AddAttribute(9, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddContent(10, "User Catalog");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(11, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(12, "\r\n");
             }
             ));
             __builder.CloseComponent();

@@ -165,33 +165,42 @@ using Blazored.Toast.Configuration;
 #nullable disable
             ));
             __builder.AddAttribute(2, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
-                __builder2.OpenComponent<Blazorise.LayoutSider>(3);
-                __builder2.AddAttribute(4, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.LayoutSiderContent>(5);
-                    __builder3.AddAttribute(6, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<BOMTool.V.Shared.NavMenu>(7);
+                __builder2.AddMarkupContent(3, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.LayoutSider>(4);
+                __builder2.AddAttribute(5, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(6, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.LayoutSiderContent>(7);
+                    __builder3.AddAttribute(8, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(9, "\r\n            ");
+                        __builder4.OpenComponent<BOMTool.V.Shared.NavMenu>(10);
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(11, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(12, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
-                __builder2.AddMarkupContent(8, "\r\n    ");
-                __builder2.OpenComponent<Blazorise.Layout>(9);
-                __builder2.AddAttribute(10, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
-                    __builder3.OpenComponent<Blazorise.LayoutHeader>(11);
-                    __builder3.AddAttribute(12, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<BOMTool.V.Shared.LoginDisplay>(13);
+                __builder2.AddMarkupContent(13, "\r\n    ");
+                __builder2.OpenComponent<Blazorise.Layout>(14);
+                __builder2.AddAttribute(15, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder3) => {
+                    __builder3.AddMarkupContent(16, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.LayoutHeader>(17);
+                    __builder3.AddAttribute(18, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(19, "\r\n            ");
+                        __builder4.OpenComponent<BOMTool.V.Shared.LoginDisplay>(20);
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(21, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
-                    __builder3.AddMarkupContent(14, "\r\n        ");
-                    __builder3.OpenComponent<Blazorise.LayoutContent>(15);
-                    __builder3.AddAttribute(16, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
-                        __builder4.OpenComponent<Blazorise.Row>(17);
-                        __builder4.AddAttribute(18, "Gutter", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<(System.Int32 Horizontal, System.Int32 Vertical)>(
+                    __builder3.AddMarkupContent(22, "\r\n        ");
+                    __builder3.OpenComponent<Blazorise.LayoutContent>(23);
+                    __builder3.AddAttribute(24, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder4) => {
+                        __builder4.AddMarkupContent(25, "\r\n            ");
+                        __builder4.OpenComponent<Blazorise.Row>(26);
+                        __builder4.AddAttribute(27, "Gutter", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<(System.Int32 Horizontal, System.Int32 Vertical)>(
 #nullable restore
 #line 16 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\MainLayout.razor"
                          (32, 16)
@@ -200,9 +209,10 @@ using Blazored.Toast.Configuration;
 #line hidden
 #nullable disable
                         ));
-                        __builder4.AddAttribute(19, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
-                            __builder5.OpenComponent<Blazorise.Column>(20);
-                            __builder5.AddAttribute(21, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
+                        __builder4.AddAttribute(28, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder5) => {
+                            __builder5.AddMarkupContent(29, "\r\n                ");
+                            __builder5.OpenComponent<Blazorise.Column>(30);
+                            __builder5.AddAttribute(31, "ColumnSize", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Blazorise.IFluentColumn>(
 #nullable restore
 #line 17 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\MainLayout.razor"
                                     ColumnSize.Is12
@@ -211,8 +221,9 @@ using Blazored.Toast.Configuration;
 #line hidden
 #nullable disable
                             ));
-                            __builder5.AddAttribute(22, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
-                                __builder6.AddContent(23, 
+                            __builder5.AddAttribute(32, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((__builder6) => {
+                                __builder6.AddMarkupContent(33, "\r\n                    ");
+                                __builder6.AddContent(34, 
 #nullable restore
 #line 18 "C:\Code\BOMToolVS\BOMTool\BOMTool.V\Shared\MainLayout.razor"
                      Body
@@ -221,18 +232,23 @@ using Blazored.Toast.Configuration;
 #line hidden
 #nullable disable
                                 );
+                                __builder6.AddMarkupContent(35, "\r\n                ");
                             }
                             ));
                             __builder5.CloseComponent();
+                            __builder5.AddMarkupContent(36, "\r\n            ");
                         }
                         ));
                         __builder4.CloseComponent();
+                        __builder4.AddMarkupContent(37, "\r\n        ");
                     }
                     ));
                     __builder3.CloseComponent();
+                    __builder3.AddMarkupContent(38, "\r\n    ");
                 }
                 ));
                 __builder2.CloseComponent();
+                __builder2.AddMarkupContent(39, "\r\n");
             }
             ));
             __builder.CloseComponent();

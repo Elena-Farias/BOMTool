@@ -5,5 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Code\BOMToolVS\BOMTool\BOMTool.V\bin\Release\netstandard2.1\publish\</_PublishTargetUrl>
+    <History>True|2021-04-20T13:57:56.1345109Z;True|2021-04-20T07:57:15.0854404-06:00;True|2021-04-19T17:41:26.1858079-06:00;True|2021-04-19T17:28:23.4146238-06:00;True|2021-04-19T17:23:52.8315610-06:00;True|2021-04-19T17:16:52.6836697-06:00;True|2021-04-19T17:12:21.8863639-06:00;True|2021-04-19T16:59:01.5718137-06:00;True|2021-04-19T11:01:02.7403533-06:00;</History>
   </PropertyGroup>
 </Project>

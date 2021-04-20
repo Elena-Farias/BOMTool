@@ -34,7 +34,7 @@ namespace BOMTool.C.Controller
                 return Ok(location);
             }
 
-            catch (Exception ex)
+           catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
